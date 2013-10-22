@@ -24,4 +24,4 @@ Polling For Data
   
 <b>5. Referenced Documents & Standards</b>  
 
-<a href="https://github.com/CarmaSys/CarmaLinkAPI/wiki">version 1.4</a>
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.5">version 1.5</a>
