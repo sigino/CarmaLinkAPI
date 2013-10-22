@@ -241,4 +241,4 @@ An object representing a new deployment. Note, this object is updated by two sep
 }
 ```
   
-[Next Section: Referenced Documents & Standards](https://github.com/CarmaSys/CarmaLinkAPI/wiki/Referenced-Documents-&-Standards)
+[Next Section: Referenced Documents & Standards](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/referencedDocumentsAndStandards.md)
