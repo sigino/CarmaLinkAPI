@@ -2,7 +2,7 @@
 All data from the API is in SI units by default. In certain cases as described in this document, a query field can be included in a web request to specify alternate (International) units.  
 
 **Acceleration**  
-m/s2 - Meters per (second squared)  
+m/s<sup>2</sup> - Meters per (second squared)  
   
 **Date & Time**  
 ms - Unix epoch time (also called POSIX time), defined as the number of seconds that have elapsed since midnight Coordinated Universal Time (UTC), January 1, 1970 (not counting leap seconds - as such, it is not an absolutely linear representation of time nor a true representation of UTC).  
@@ -21,6 +21,9 @@ ms - This is the amount of time remaining until the next scheduled service as in
 
 **Fuel consumed**  
 l - Litres  
+
+**Level**  
+% - Percentage of the whole amount remaining  
 
 **Location**  
 °,° - Degrees (+North or -South), degrees(+East or -West) in decimal format  
@@ -43,4 +46,4 @@ km/hr kph - Kilometers per hour (magnitude)
 **Voltage**  
 V - Volts, measured between the OBD-II power and ground pins  
 
-[Next Section: Summary of Reports] (https://github.com/CarmaSys/CarmaLinkAPI/wiki/Summary-of-Reports)
+[Next Section: Summary of Reports] (https://github.com/CarmaSys/CarmaLinkAPI/tree/1.5/SummaryOfReports.md)
