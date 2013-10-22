@@ -1,4 +1,4 @@
-<h3>Polling for Data</h3>  
+<h2>Polling for Data</h2>  
 If your application needs to periodically poll for report data it's suggested that you set up a status report to contact the server at least once during the polling interval. Each time you receive a successful status report from CarmaLink you can assume that all data up until that point has been sent to the server and you may query for it as you wish. If however, the CarmaLink happens to lose its wireless signal and it can't send any report data, you will note that you do not get a status report back (or any reports for that matter). Your application should take note of the last successful reportTimestamp the CarmaLink reported. You may continue to poll and when CarmaLink regains connectivity, it will push all the delinquint reports to the server. At this point your application can "catch up" to any data missed during this period by querying for any data with the "since" query parameter using the CarmaLink's last succesful status reportTimestamp as the value.  
   
 ### Dealing With Queued Data Due To Poor Wireless Signal  
