@@ -43,4 +43,4 @@ km/hr kph - Kilometers per hour (magnitude)
 **Voltage**  
 V - Volts, measured between the OBD-II power and ground pins  
 
-[Next Section: Summary of Reports] (https://github.com/CarmaSys/CarmaLinkAPI/wiki/Summary-of-Reports)
+[Next Section: Summary of Reports] (https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/SummaryOfReports.md)
