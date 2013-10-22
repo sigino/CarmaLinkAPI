@@ -98,4 +98,4 @@ If you issue a multiple query using a PUT command and the API is sent an invalid
   }  
 }
 ```
-[Next Section: Report Configuration](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/Report%20Configuration.md)
+[Next Section: Report Configuration](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/reportConfiguration.md)
