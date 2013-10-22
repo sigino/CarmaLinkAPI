@@ -62,4 +62,4 @@ In addition to the required authentication query parameters, these methods accep
   
 `limit=<integer>` limit to the number of results to return (default is 50, max is 250)  
     
-[Next Section: Using the All Activity Report](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/UsingTheAllActivityReport.md)
+[Next Section: Using the All Activity Report](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/usingTheAllActivityReport.md)
