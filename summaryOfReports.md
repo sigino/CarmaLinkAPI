@@ -1,4 +1,4 @@
-<h3>Summary of Reports</h3>  
+<h2>Summary of Reports</h2>  
 The following list summarizes reports provided by the API. Taken together, they describe the complete application/operational definition of the CarmaLink available to the customer. See the following sections of this document for detailed information on how to set up (configure) each report and how to retrieve the report data.  
 
 The **URL** field for a report gives the unique part of the API resource name that is used to reference the configuration of the report, and also that report's output data.  
