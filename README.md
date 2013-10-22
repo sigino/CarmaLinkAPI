@@ -1,3 +1,5 @@
 Welcome to the CarmaLink.API documentation. 
 
-Check out our <a href="https://github.com/CarmaSys/CarmaLinkAPI/wiki">Wiki</a> page on Github for the latest docs on how to get started with our Vehicle Telematics hardware.
+Version 1.6 <i>coming soon</i>
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/master/v1.5.md">Version 1.5</a>
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/wiki">Version 1.4</a>
