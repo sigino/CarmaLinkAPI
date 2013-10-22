@@ -69,4 +69,4 @@ _Response:_
 }
 ```
   
-[Next Section: Configuration Deactivation - DELETE](https://github.com/CarmaSys/CarmaLinkAPI/wiki/Configuration-Deactivation-DELETE)  
+[Next Section: Configuration Deactivation - DELETE](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/configurationDeactivationDELETE.md)  
