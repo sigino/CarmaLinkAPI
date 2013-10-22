@@ -8,7 +8,7 @@ Welcome to the CarmaLink.API documentation.
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/master/Introduction.md">Overview</a>  
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/master/Terminology.md">Terminology</a>  
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/master/units.md">Units</a>  
-Summary of Reports  
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/SummaryOfReports.md">Summary of Reports</a>   
   
 <b>2. Authentication & Permissions</b>  
 Querying Single Vs. Multiple CarmaLinks  
