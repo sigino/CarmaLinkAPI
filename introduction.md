@@ -12,5 +12,5 @@ Data is gathered from the vehicle’s electronic control units via the OBD-II po
   
 A report is triggered by events; e.g., an overspeeding report is activated when the vehicle is moving faster than configured threshold. Once triggered, a report is considered active in the VTD until an end condition is met, which is generally the loss of the initial triggering condition. At this point, a report is generated with specific relevant data and sent to the server for retrieval via the API. In the case of the overspeeding example, useful information such as start time and duration as well as maximum vehicle speed experienced during this interval are reported.
   
-<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/Terminology.md">Next section: Terminology</a>
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/terminology.md">Next section: Terminology</a>
 
