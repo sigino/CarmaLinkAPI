@@ -1,3 +1,4 @@
+<h2>Report Data</h2>  
 The application retrieves vehicle report data using the following methods.  
   
 * All methods in this section are formed off the base URI `/v1/[serial]/data`, using the GET HTTP method  
