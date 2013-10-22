@@ -1,4 +1,4 @@
-<h3>Summary of Reports</h3>  
+<h2>Summary of Reports</h2>  
 The following list summarizes reports provided by the API. Taken together, they describe the complete application/operational definition of the CarmaLink available to the customer. See the following sections of this document for detailed information on how to set up (configure) each report and how to retrieve the report data.  
 
 The **URL** field for a report gives the unique part of the API resource name that is used to reference the configuration of the report, and also that report's output data.  
@@ -135,4 +135,4 @@ OptionalParameters: ODOMETER, DURATION_TO_SERVICE, DISTANCE_TO_SERVICE
 Trigger (Activation Condition): Sends the DTCs when the check engine light is illuminated or if any of the optional conditions are triggered. Returns check engine light status and tire pressure status (if available).  
 Notes: Sent at the beginning and end of the event.  
   
-[Next Section: Authentication & Permissions](https://github.com/CarmaSys/CarmaLinkAPI/wiki/Authentication-&-Permissions)
+[Next Section: Authentication & Permissions](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/authenticationAndPermissions.md)
