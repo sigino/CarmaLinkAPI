@@ -11,15 +11,11 @@ When the **Location** field for a report is checked, it means that the report mu
 
 When the **Buzzer** field for a report is checked, it means that an additional configuration option exists that, when enabled, causes the CarmaLink to generate audible warning sounds in the vehicle while the report is activated.  
 
-When the **Optional Parameters** field for a report is checked, it means that the report can be configured with a set of strings that determines which additional parameters are included in this report's data.  
-
-
 **Hard Acceleration**  
 URL: `/hard_accel`  
 Allowance: Yes  
 Threshold: Yes  
 Location: Yes  
-Optional Parameters: Yes  
 Buzzer: Three rising notes  
 Options: No  
 Trigger (Activation Condition): Vehicle acceleration exceeds specified threshold  
@@ -30,7 +26,6 @@ URL: `/hard_brake`
 Allowance: Yes  
 Threshold: Yes  
 Location: Yes  
-Optional Parameters: Yes  
 Buzzer: Three falling notes  
 Options: No  
 Trigger (Activation Condition): Vehicle deceleration exceeds specified threshold  
@@ -41,7 +36,6 @@ URL: `/hard_cornering`
 Allowance: Yes  
 Threshold: Yes  
 Location: Yes  
-Optional Parameters: Yes  
 Buzzer: Hi/low two note (0 sec gap)  
 Options: No  
 Trigger (Activation Condition): Vehicle lateral acceleration exceeds specified threshold  
@@ -52,7 +46,6 @@ URL: `/idling`
 Allowance: Yes  
 Threshold: No  
 Location: Yes  
-Optional Parameters: Yes  
 Buzzer: Freefall down notes (5 sec gap)  
 Options: No  
 Trigger (Activation Condition): Vehicle engine is on, but the speed is zero  
@@ -63,7 +56,6 @@ URL: `/new_deployment`
 Allowance: No  
 Threshold: No  
 Location: No  
-Optional Parameters: No  
 Buzzer: No  
 Options: No  
 Trigger (Activation Condition): CarmaLink is either plugged into a vehicle or first communicates with a vehicle's ECU (typically when the engine is turned on; usually the VIN is not available prior to this)  
@@ -74,7 +66,6 @@ URL: `/overspeeding`
 Allowance: Yes  
 Threshold: Yes  
 Location: Yes  
-Optional Parameters: Yes  
 Buzzer: High/low two note (5 sec gap)  
 Options: No  
 Trigger (Activation Condition): Vehicle speed exceeds specified threshold  
@@ -95,7 +86,6 @@ URL: `/seatbelt`
 Allowance: Yes  
 Threshold: Yes  
 Location: Yes  
-Optional Parameters: Yes  
 Buzzer: Hi/low two note (3 sec gap)  
 Options: No  
 Trigger (Activation Condition): Vehicle speed exceeds specified threshold while seatbelt is unbuckled  
@@ -106,7 +96,6 @@ URL: `/status`
 Allowance: No  
 Threshold: Yes  
 Location: Yes  
-Optional Parameters: Yes  
 Buzzer: No  
 Options: No  
 Trigger (Activation Condition): Occurs on a periodic basis while the vehicle is on; reports status data  
@@ -117,7 +106,6 @@ URL: `/trip_report`
 Allowance: No  
 Threshold: No  
 Location: Yes  
-Optional Parameters: Yes  
 Buzzer: No  
 Options: OptionalParameters: ODOMETER, DURATION_TO_SERVICE, DISTANCE_TO_SERVICE  
 Trigger (Activation Condition): Trip begins when vehicle engine state changes from off to on, and ends when engine state returns to off  
@@ -128,7 +116,6 @@ URL: `/vehicle_health`
 Allowance: No  
 Threshold: No  
 Location: Yes  
-Optional Parameters: Yes  
 Buzzer: No  
 Options: OptionalConditions: TIRE_PRESSURE_CHANGE
 OptionalParameters: ODOMETER, DURATION_TO_SERVICE, DISTANCE_TO_SERVICE  
