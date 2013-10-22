@@ -46,4 +46,4 @@ Successful deactivation requests will return an HTTP status code 204. If a resou
   
 After performing a successful deactivation request on a resource, GET requests to that resource will also return HTTP 404. However, clients may still retrieve a given configuration record by specifying a configuration id as a query parameter, which will return the record with all its properties as described above.  
 
-[Next Section: Report Data](https://github.com/CarmaSys/CarmaLinkAPI/wiki/Report-Data)
+[Next Section: Report Data](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/ReportData.md)
