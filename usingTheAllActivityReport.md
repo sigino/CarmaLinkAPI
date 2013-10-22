@@ -3,4 +3,4 @@ When polling for data on a group of CarmaLinks it seems like it would be advanta
   
 **! The "All Activity" data report only provides 50 data records (maximum) per sub-report in the time period queried.**  
   
-[Next Section: Polling for Data](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/PollingForData.md)
+[Next Section: Polling for Data](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/pollingForData.md)
