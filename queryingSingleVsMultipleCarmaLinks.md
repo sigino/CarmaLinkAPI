@@ -1,3 +1,4 @@
+<h2>Querying Single Vs. Multiple CarmaLinks</h2>  
 All endpoints need to specify which CarmaLinks to query by their serial number. In some cases the application may need to query multiple (or all) CarmaLinks under an API account. To achieve this you can specify multiple serial numbers or ranges in the following format:  
   
     /v1/[serial][.|-][serial]  
