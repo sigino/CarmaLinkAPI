@@ -4,24 +4,24 @@ Welcome to the CarmaLink.API documentation.
 
 <b>Table of Contents</b>  
   
-<b><a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/Introduction.md">1. Introduction</a></b>    
-<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/Introduction.md">Overview</a>  
-<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/Terminology.md">Terminology</a>  
+<b><a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/introduction.md">1. Introduction</a></b>    
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/introduction.md">Overview</a>  
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/terminology.md">Terminology</a>  
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/units.md">Units</a>  
-<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/SummaryOfReports.md">Summary of Reports</a>   
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/summaryOfReports.md">Summary of Reports</a>   
   
-<b>2. Authentication & Permissions</b>  
-Querying Single Vs. Multiple CarmaLinks  
+<b><a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/authenticationAndPermissions.md">2. Authentication & Permissions</a></b>  
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/queryingSingleVsMultipleCarmaLinks.md">Querying Single Vs. Multiple CarmaLinks</a>  
   
-<b>3. Report Configuration</b>  
-Configuration Data Create/Update Commands - PUT  
-Configuration Data Read Commands - GET  
-Configuration Deactivation - DELETE  
+<b><a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/reportConfiguration.md">3. Report Configuration</a></b>  
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/configurationDataCreateUpdateCommandsPUT.md">Configuration Data Create/Update Commands - PUT</a>  
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/configurationDataReadCommandsGET.md">Configuration Data Read Commands - GET</a>  
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/configurationDeactivationDELETE.md">Configuration Deactivation - DELETE</a>  
   
-<b>4. Report Data</b>  
-Using the "All Activity" Report  
-Polling For Data  
+<b><a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/reportData.md">4. Report Data</a></b>  
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/usingTheAllActivityReport.md">Using the "All Activity" Report</a>  
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/pollingForData.md">Polling For Data</a>  
   
-<b>5. Referenced Documents & Standards</b>  
+<b><a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/referencedDocumentsAndStandards.md">5. Referenced Documents & Standards</a></b>  
 
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.5">version 1.5</a>
