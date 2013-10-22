@@ -1,3 +1,4 @@
+<h2>Configuration Data Read Commands - GET</h2>  
 Report configurations are retrieved by issuing a series of GET commands to the API.  
   
 * All GET methods accept an additional, optional query parameter, `id={configId}` specifying a specific config id to return. When not provided, the CarmaLink's most recent report configuration is returned  
