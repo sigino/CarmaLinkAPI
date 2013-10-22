@@ -22,9 +22,6 @@ ms - This is the amount of time remaining until the next scheduled service as in
 **Fuel consumed**  
 l - Litres  
 
-**Level**  
-% - Percentage of the whole amount remaining  
-
 **Location**  
 °,° - Degrees (+North or -South), degrees(+East or -West) in decimal format  
 
@@ -44,6 +41,6 @@ km - This represents the total distance driven as indicated by the vehicle's ECU
 km/hr kph - Kilometers per hour (magnitude)  
 
 **Voltage**  
-V - Volts, measured between the OBD-II power and ground pins  
+V - Volts, measured between the OBD-II power and ground pins   
 
-[Next Section: Summary of Reports] (https://github.com/CarmaSys/CarmaLinkAPI/tree/1.5/SummaryOfReports.md)
+[Next Section: Summary of Reports] (https://github.com/CarmaSys/CarmaLinkAPI/tree/1.4/SummaryOfReports.md)
