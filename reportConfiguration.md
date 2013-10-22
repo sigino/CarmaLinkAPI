@@ -1,3 +1,4 @@
+<h2>Report Configuration</h2>  
 CarmaLink behavior is specified through the API by a set of report and general configurations. In addition to specifying the generation of report data for later analysis, report configuration also controls the behavior of real-time in-vehicle audible driver alerts, which are emitted from a buzzer built into the CarmaLink.  
   
 An application manages these configurations by using the following methods.  
