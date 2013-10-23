@@ -1,4 +1,4 @@
-<h2>Introduction</h2>
+<h2>1. Introduction</h2>
 For further customer support, log onto the customer support portal at support.carmasys.com  
   
 <b>Overview</b>  
