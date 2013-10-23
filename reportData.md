@@ -1,4 +1,4 @@
-<h2>Report Data</h2>  
+<h2>4. Report Data</h2>  
 The application retrieves vehicle report data using the following methods.  
   
 * All methods in this section are formed off the base URI `/v1/[serial]/data`, using the GET HTTP method  
@@ -9,7 +9,7 @@ The application retrieves vehicle report data using the following methods.
   
 **All Activity Report**  
 URL: `/all_activity`  
-Response Body: `List<All Activity Report>`  
+Response Body: `All Activity Report`  
   
 **Hard Acceleration Report**  
 URL: `/hard_accel`  
@@ -34,6 +34,10 @@ Response Body: `List<Overspeeding Report>`
 **Parking Brake Drag Report**  
 URL: `/parking_brake`   
 Response Body: `List<Parking Brake Drag Report>`  
+
+**Seatbelt Not In Use Report**  
+URL: `/seatbelt`   
+Response Body: `List<Seatbelt Not Used Report>`  
   
 **Trip Summary Report**  
 URL: `/trip_report`   
@@ -54,12 +58,12 @@ Response Body: `List<New Deployment Report>`
 ### Filtering  
 In addition to the required authentication query parameters, these methods accept four optional query parameters as explained below. These parameters can be used to specify the range of data queried, with the exception of all_activity, which ignores ’limit’ and ’offset’ parameters.  
   
-`since=<timestamp_millis>` limit before which no older data should be returned (default is 0)  
+`since=<timestamp_millis>` limit before which no older data should be returned, data is returned starting at the current time and then listed back to the since variable (default is 0)  
   
-`before=<timestamp_millis>` limit after which no newer data should be returned - useful for paging (default is current time)  
+`before=<timestamp_millis>` limit after which no newer data should be returned - data is returned starting at the before time variable (default is current time)  
   
 `offset=<integer>` numeric offset from which to start returning data (default is 0, max is 100)  
   
 `limit=<integer>` limit to the number of results to return (default is 50, max is 250)  
     
-[Next Section: Using the All Activity Report](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/usingTheAllActivityReport.md)
+[Next Section: Using the "All Activity" Report](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/usingTheAllActivityReport.md)
