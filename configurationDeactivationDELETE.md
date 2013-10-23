@@ -1,6 +1,6 @@
 <h2>Configuration Deactivation - DELETE</h2>  
 Users may deactivate configurations they no longer want to have running using the HTTP DELETE method on the respective resource. Contrary to the standard implications of this method, it does not actually delete any data on the server. If you want to disable the buzzer for the configuration, see Buzzer Configuration.  Once the CarmaLink has acknowledged the configuration deactivation request, it will no longer send data reports of that type and the buzzer will likewise no longer respond to events related to the deactivated configuration.  
-  
+
 **Hard Acceleration Report**  
 URL: `/hard_accel`  
 Description: Deactivate hard acceleration report  
