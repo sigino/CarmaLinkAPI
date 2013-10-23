@@ -228,8 +228,8 @@ An object representing a new deployment. Note, this object is updated by two sep
 1. CarmaLink is plugged into the vehicle (New Installation)   
 2. Vehicle is turned on  
 3. CarmaLink connects to the ECU and retrieves the VIN (New Deployment)  
-![timeline image](img/API_deployTimeline.png)
-**! Not all vehicles support VIN through OBD-II. Vehicles that don't support VIN will return an empty string "" for the VIN.**  
+  ![timeline image](img/API_deployTimeline.png)
+  **! Not all vehicles support VIN through OBD-II. Vehicles that don't support VIN will return an empty string "" for the VIN.**  
   
 ```javascript
 {  
