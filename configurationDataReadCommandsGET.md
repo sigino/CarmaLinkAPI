@@ -1,7 +1,7 @@
 <h2>Configuration Data Read Commands - GET</h2>  
 Report configurations are retrieved by issuing a series of GET commands to the API.  
   
-* All GET methods accept an additional, optional query parameter, `id={configId}` specifying a specific config id to return. When not provided, the CarmaLink's most recent report configuration is returned  
+* All GET methods accept an additional, optional query parameter, ’id={configId}’ specifying a specific config id to return. When not provided, the CarmaLink's most recent report configuration is returned  
 * All of the GET methods accept the content type application/json  
 * The success code is 200 (OK)  
   
@@ -66,7 +66,7 @@ _Response:_
   "allowance" : 5000,  
   "buzzer" : "HIGH",  
   "location" : true  
-}
+}  
 ```
   
 [Next Section: Configuration Deactivation - DELETE](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/configurationDeactivationDELETE.md)  
