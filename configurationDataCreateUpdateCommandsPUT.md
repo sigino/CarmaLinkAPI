@@ -3,7 +3,7 @@ Report configurations are created or updated by issuing a series of PUT commands
   
 *All of these PUT methods accept the content type application/json  
 *The success code is 204 (No Content)    
-*If a rejected field is added to a request, the request will fail with error code 400  
+*If a rejected field is added to a request, the request will fail with error code 404  
   
 **Hard Acceleration Report**  
 URL: `/hard_accel`  
@@ -12,7 +12,6 @@ Threshold: > 0
 Location: true/false  
 Buzzer: high/medium/off  
 OptionalConditions: N/A  
-OptionalParams: N/A  
 Description: Reports hard acceleration above a given threshold, in Gs  
   
 **Hard Braking Report**  
@@ -22,7 +21,6 @@ Threshold: < 0
 Location: true/false  
 Buzzer: high/medium/off  
 OptionalConditions: N/A  
-OptionalParams: N/A  
 Description: Reports hard braking below a given (negative) threshold, in Gs  
   
 **Hard Cornering Report**  
@@ -32,7 +30,6 @@ Threshold: > 0
 Location: true/false  
 Buzzer: high/medium/off  
 OptionalConditions: N/A  
-OptionalParams: N/A  
 Description: Reports hard cornering above a given threshold. The maximum acceleration recorded is returned as well as a direction, RIGHT or LEFT  
   
 **Status Report**  
@@ -42,7 +39,6 @@ Threshold: ≥ 5000
 Location: true/false  
 Buzzer: rejected  
 OptionalConditions: N/A  
-OptionalParams: N/A  
 Description: Reports Status periodically while the vehicle is on  
   
 **Idling Report**  
@@ -52,7 +48,6 @@ Threshold: rejected
 Location: true/false  
 Buzzer: high/medium/off  
 OptionalConditions: N/A  
-OptionalParams: N/A  
 Description: Reports idling events past a given time allowance  
   
 **Overspeeding Report**  
@@ -62,7 +57,6 @@ Threshold: > 0
 Location: true/false  
 Buzzer: high/medium/off  
 OptionalConditions: N/A  
-OptionalParams: N/A  
 Description: Reports overspeeding - The query string ’units=mph’ can be used to specify the threshold as MPH   
  
 **Parking Brake Drag Report**  
@@ -72,8 +66,7 @@ Threshold: > 0
 Location: true/false  
 Buzzer: high/medium/off  
 OptionalConditions: N/A  
-OptionalParams: N/A  
-Description: Reports overspeeding - Reports occurrences of driving while the parking brake is engaged.  
+Description: Reports occurrences of driving while the parking brake is engaged.  
   
 **Seatbelt Not In Use Report**  
 URL: `/seatbelt`  
@@ -82,7 +75,6 @@ Threshold: > 0
 Location: true/false  
 Buzzer: high/medium/off  
 OptionalConditions: N/A  
-OptionalParams: N/A  
 Description: Reports occurrences of driving without wearing a seatbelt.    
   
 **Trip Report**  
@@ -92,9 +84,6 @@ Threshold: rejected
 Location: true/false  
 Buzzer: rejected  
 OptionalConditions: N/A  
-OptionalParams: ODOMETER,  
-DURATION_TO_SERVICE,  
-DISTANCE_TO_SERVICE  
 Description: Sent at the beginning and end of a trip. Location at the beginning of a trip may not be accurate.  
   
 **Vehicle Health Report**  
@@ -103,10 +92,7 @@ Allowance: rejected
 Threshold: rejected  
 Location: true/false  
 Buzzer: rejected  
-OptionalConditions: TIRE_PRESSURE_CHANGE  
-OptionalParams: ODOMETER,  
-DURATION_TO_SERVICE,  
-DISTANCE_TO_SERVICE  
+OptionalConditions: EMISSION_MONITORS  
 Description: Sent when there is a change in state of the MIL or any of the optional conditions.  
   
 ### Configuration Data Content - The Configuration Update Structure  
