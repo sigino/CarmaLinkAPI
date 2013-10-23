@@ -1,5 +1,5 @@
 <h2>Polling for Data</h2>  
-If your application needs to periodically poll for report data it's suggested that you set up a status report to contact the server at least once during the polling interval. Each time you receive a successful status report from CarmaLink you can assume that all data up until that point has been sent to the server and you may query for it as you wish. If however, the CarmaLink happens to lose its wireless signal and it can't send any report data, you will note that you do not get a status report back (or any reports for that matter). Your application should take note of the last successful reportTimestamp the CarmaLink reported. You may continue to poll and when CarmaLink regains connectivity, it will push all the delinquint reports to the server. At this point your application can "catch up" to any data missed during this period by querying for any data with the "since" query parameter using the CarmaLink's last succesful status reportTimestamp as the value.  
+If your application needs to periodically poll for report data it's suggested that you set up a status report to contact the server at least once during the polling interval. Each time you receive a successful status report from CarmaLink you can assume that all data up until that point has been sent to the server and you may query for it as you wish. If however, the CarmaLink happens to lose its wireless signal and it can't send any report data, you will note that you do not get a status report back (or any reports for that matter). Your application should take note of the last successful reportTimestamp the CarmaLink reported. You may continue to poll and when CarmaLink regains connectivity, it will push all the delinquent reports to the server. At this point your application can "catch up" to any data missed during this period by querying for any data with the "since" query parameter using the CarmaLink's last successful status reportTimestamp as the value.  
   
 ### Dealing With Queued Data Due To Poor Wireless Signal  
 CarmaLink can only transmit while connected to a GSM wireless network. Some common trouble spots include underground car parks and tunnels.  
@@ -64,7 +64,7 @@ Each ellipsized array contains a list of report objects of the appropriate type.
  "idlingReports":[...],  
  "overspeedingReports":[...],  
  "summaryReports":[...]  
-}
+}  
 ```
   
 **Hard Acceleration Report**  
@@ -77,7 +77,7 @@ An object representing a hard acceleration report.
  "duration":13242,  
  "maxAcceleration":3.45,  
  "reportTimestamp":1357738287406  
-}
+}  
 ```
   
 **Hard Braking Report**  
@@ -90,7 +90,7 @@ An object representing a hard braking report.
  "duration":13242,  
  "minAcceleration":-4.53,  
  "reportTimestamp":1357738287406  
-}
+}  
 ```
   
 **Hard Cornering Report**  
@@ -103,7 +103,7 @@ An object representing a hard cornering report.
  "duration":1342,  
  "maxAcceleration":1.53,  
  "direction": "RIGHT"  
- }
+ }  
 ```
   
 **Idling Report**  
@@ -116,7 +116,7 @@ An object representing an idling report.
  "duration":13242,  
  "fuelConsumed":1.23,  
  "reportTimestamp":1357738287406  
-}
+}  
 ```
   
 **Overspeeding Report**  
@@ -129,7 +129,7 @@ An object representing an overspeeding report.
  "duration":13242,  
  "maxSpeed":120.54,  
  "reportTimestamp":1357738287406  
-}
+}  
 ```
   
 **Parking Brake Drag Report**  
@@ -143,7 +143,7 @@ An object representing a parking brake drag report.
  "distance": 5.6,  
  "maxSpeed":32.54,  
  "reportTimestamp":1357738287406  
-}
+}  
 ```
   
 **Seatbelt Not Used Report**  
@@ -157,11 +157,11 @@ An object representing a seatbelt not in use report.
  "distance": 23.65,  
  "maxSpeed": 47.87,  
  "reportTimestamp":1357738287406  
-}
+}  
 ```
     
 **Trip Summary Report**  
-An object representing a trip summary report. (add context for inProgress)  
+An object representing a trip summary report.  
 ```javascript
 {  
  "serial":49,  
@@ -171,12 +171,9 @@ An object representing a trip summary report. (add context for inProgress)
  "fuelConsumed":32.46,  
  "distance": 45.66,  
  "voltage": 14.3,  
- "odometer": 62838.37,  
- "durationToService" : 40,  
- "distanceToService" : 403,  
  "inProgress": false,  
- "reportTimestamp":1357738287406  
-}
+ "reportTimestamp":1357738287406,  
+}  
 ```
   
 **Vehicle Health Report**  
@@ -190,7 +187,7 @@ An object representing a vehicle health report.
  "duration": 0,  
  "dtcs": ["P8374"],  
  "tirePressureLow": true  
- }
+}  
 ```
   
 **Status Report**  
@@ -204,19 +201,31 @@ An object representing a Status report.
  "vehicleVoltage":12.994524,  
  "gsmSignalStrength":-75.0,  
  "reportTimestamp":1357738287406  
-}
+}  
 ```
   
 **Location Object**  
 An object representing a location. This sub-object is included in any reports that support enabling the location flag.  
 ```javascript
-{  
+"location" : {  
  "longitude": -73.8231057,  
  "latitude": 42.6263101,  
  "accuracy": 5.164,  
  "heading": 236.34811,  
  "speed": 25  
-}
+}  
+```
+  
+**Optional Parameters Object**  
+An object representing the optional parameter data for the given report.  This sub-object is included in any reports that support enabling the optional parameters flag.  
+```javascript
+"optionalParams" : {  
+ "odometer" : 96921.01,  
+ "durationToService" : 60,  
+ "distanceToService" : 157,  
+ "emissionMonitors" : 517376,  
+ "fuelLevel" : 54.3  
+}  
 ```
   
 -----  
@@ -225,11 +234,12 @@ An object representing a location. This sub-object is included in any reports th
 An object representing a new deployment. Note, this object is updated by two separate events on the CarmaLink. The first event is when the CarmaLink is initially installed into a vehicle’s OBDII port. A "New Installation" event is sent to the server and this deployment record is created with the ’installationTime’ and ’removalTime’ fields set. The second event is when the vehicle is started for the first time following a new installation. A "New Deployment" event is then sent to the server with the ’deploymentTime’ and ’vin’ (if available) fields set (among others which aren’t represented here).  
   
 **Deployment Timeline**  
+image link coming soon
 1. CarmaLink is plugged into the vehicle (New Installation)   
 2. Vehicle is turned on  
 3. CarmaLink connects to the ECU and retrieves the VIN (New Deployment)  
   
-**! Not all vehicles support VIN through OBD-II. Vehicles that don't support VIN will return an empty string "" for the VIN.**  
+**Not all vehicles support VIN through OBD-II. Vehicles that don't support VIN will return an empty string "" for the VIN.**  
   
 ```javascript
 {  
@@ -238,7 +248,7 @@ An object representing a new deployment. Note, this object is updated by two sep
  "removalTime":1344701632346,  
  "deploymentTime":1344707286452,  
  "vin":"1FTPX14534FA30554"  
-}
+}  
 ```
   
-[Next Section: Referenced Documents & Standards](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/referencedDocumentsAndStandards.md)
+[Next Section: 5. Referenced Documents & Standards](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/referencedDocumentsAndStandards.md)
