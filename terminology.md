@@ -36,7 +36,7 @@ Read as requirement.
 On-Board Diagnostics as defined by SAE J1979  
 
 **Optional Parameter**  
-This field can contain a list of strings to optionally add extra parameters to a report. The parameters allowed are specific to each report.  
+This field can contain a list of strings to optionally add extra parameters to a report.  
 
 **Optional Condition**  
 This field can contain a list of strings to specify optional conditions on which to trigger a report. The conditions allowed are specified to each report.  
