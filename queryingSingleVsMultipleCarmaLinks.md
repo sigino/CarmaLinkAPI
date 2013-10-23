@@ -27,10 +27,10 @@ When querying more than one CarmaLink you will usually receive a 200 response fr
        "serial3" : { "error" : "Error Message", "code" : HTTP Error Code },  
        "serial4" : { "error" : "Error Message", "code" : HTTP Error Code }  
     }  
-}
+}  
 ```
   
-**When issuing PUT commands**   
+**! When issuing PUT commands**   
 If you issue a multiple query using a PUT command and the API is sent an invalid Update Configuration, it will immediately return a 400 without any response body, and abort any attempts to PUT on specified CarmaLinks.  
   
 **Multiple Query Example**  
@@ -96,6 +96,6 @@ If you issue a multiple query using a PUT command and the API is sent an invalid
       "code": 404  
     }  
   }  
-}
+}  
 ```
 [Next Section: Report Configuration](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/reportConfiguration.md)
