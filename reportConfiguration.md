@@ -1,4 +1,4 @@
-<h2>Report Configuration</h2>  
+<h2>3. Report Configuration</h2>  
 CarmaLink behavior is specified through the API by a set of report and general configurations. In addition to specifying the generation of report data for later analysis, report configuration also controls the behavior of real-time in-vehicle audible driver alerts, which are emitted from a buzzer built into the CarmaLink.  
   
 An application manages these configurations by using the following methods.  
@@ -18,12 +18,8 @@ Clients can configure the resource by sending a json object with the following s
 {  
   "fuel" : "FUEL_GASOLINE",  
   "displacement" : 1.7  
-}
+}  
 ```
-  
-! General configurations must be sent as a complete set of fuel type and displacement. Partial information such as just fuel type or just engine displacement will return an error. If displacement is not known, choose a nominal value of 2.0.  
-  
-It is recommended to set the general configuration before other reports as fuel type may be required by those reports.  
   
 Valid values for "fuel" are "FUEL_GASOLINE" and "FUEL_DIESEL", and the "displacement" member is in litres.  
 
@@ -35,7 +31,7 @@ When a GET request is made to the general_config resource, a similar javascript 
   "fuel" : "FUEL_GASOLINE",  
   "displacement" : 1.7,  
   "status": "PENDING_ACTIVATION"  
- }
+ }  
 ```
   
 If no general configuration has been set for a CarmaLink, the general configuration view will have all null values.  
