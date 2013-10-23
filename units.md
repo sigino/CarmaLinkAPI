@@ -21,6 +21,9 @@ ms - This is the amount of time remaining until the next scheduled service as in
 
 **Fuel consumed**  
 l - Litres  
+  
+**Level**  
+% - Percentage of the whole amount remaining  
 
 **Location**  
 °,° - Degrees (+North or -South), degrees(+East or -West) in decimal format  
