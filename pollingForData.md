@@ -234,7 +234,7 @@ An object representing the optional parameter data for the given report.  This s
 An object representing a new deployment. Note, this object is updated by two separate events on the CarmaLink. The first event is when the CarmaLink is initially installed into a vehicle’s OBDII port. A "New Installation" event is sent to the server and this deployment record is created with the ’installationTime’ and ’removalTime’ fields set. The second event is when the vehicle is started for the first time following a new installation. A "New Deployment" event is then sent to the server with the ’deploymentTime’ and ’vin’ (if available) fields set (among others which aren’t represented here).  
   
 **Deployment Timeline**  
-_linegraph image coming soon_  
+  ![timeline image](img/API_deployTimeline.png)
 1. CarmaLink is plugged into the vehicle (New Installation)   
 2. Vehicle is turned on  
 3. CarmaLink connects to the ECU and retrieves the VIN (New Deployment)  
