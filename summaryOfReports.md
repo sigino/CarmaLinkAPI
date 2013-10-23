@@ -123,5 +123,14 @@ Optional Parameters: Yes
 Buzzer: No  
 Trigger (Activation Condition): Sends the DTCs when the check engine light is illuminated or if any of the optional conditions are triggered. Returns check engine light status and tire pressure status (if available).  
 Notes: Sent at the beginning and end of the event.  
+
+<h3>Optional Parameters</h3>
+These parameters can be added to the indicated reports and will return additional information.
+
+EMISSION_MONITORS
+FUEL_LEVEL
+ODOMETER
+DURATION_TO_SERVICE
+DISTANCE_TO_SERVICE
   
 [Next Section: Authentication & Permissions](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/authenticationAndPermissions.md)
