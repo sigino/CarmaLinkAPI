@@ -4,11 +4,11 @@ Welcome to the CarmaLink.API documentation.
 
 <b>Table of Contents</b>  
   
-<b><a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/master/Introduction.md">1. Introduction</a></b>    
-<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/master/Introduction.md">Overview</a>  
-<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/master/Terminology.md">Terminology</a>  
-<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/master/units.md">Units</a>  
-<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/SummaryOfReports.md">Summary of Reports</a>   
+<b><a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/introduction.md">1. Introduction</a></b>    
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/introduction.md">Overview</a>  
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/terminology.md">Terminology</a>  
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/units.md">Units</a>  
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/summaryOfReports.md">Summary of Reports</a>   
   
 <b><a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/authenticationAndPermissions.md">2. Authentication & Permissions</a></b>  
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.5/queryingSingleVsMultipleCarmaLinks.md">Querying Single Vs. Multiple CarmaLinks</a>  
