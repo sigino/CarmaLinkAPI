@@ -25,7 +25,7 @@ Trigger (Activation Condition): Vehicle acceleration exceeds specified threshold
 Notes: Sent at the end of the event (once hard acceleration has ended); threshold must be a positive number.  
   
 **Hard Braking**  
-URL: `/hard_brake`  
+URL: `/hard_braking`  
 Allowance: Yes  
 Threshold: Yes  
 Location: Yes  
