@@ -16,7 +16,7 @@ URL: `/hard_accel`
 Response Body: `List<Hard Acceleration Report>`  
   
 **Hard Braking Report**  
-URL: `/hard_brake`  
+URL: `/hard_braking`  
 Response Body: `List<Hard Braking Report>`  
   
 **Hard Cornering Report**  
