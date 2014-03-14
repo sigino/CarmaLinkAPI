@@ -24,4 +24,5 @@ Welcome to the CarmaLink.API documentation.
   
 <b><a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.4/referencedDocumentsAndStandards.md">5. Referenced Documents & Standards</a></b>  
 
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.6">version 1.6</a>  
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.5">version 1.5</a>
