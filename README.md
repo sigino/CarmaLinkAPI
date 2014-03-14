@@ -8,7 +8,7 @@ Welcome to the CarmaLink.API documentation.
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.6/introduction.md">Overview</a>  
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.6/terminology.md">Terminology</a>  
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.6/units.md">Units</a>  
-<a href="https://github.com/CarmaSys/CarmaLinkAPI-unstable/blob/1.6/summaryOfReports.md">Summary of Reports</a>   
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.6/summaryOfReports.md">Summary of Reports</a>   
   
 <b><a href="https://github.com/CarmaSys/CarmaLinkAPI-unstable/blob/1.6/authenticationAndPermissions.md">2. Authentication & Permissions</a></b>  
 <a href="https://github.com/CarmaSys/CarmaLinkAPI-unstable/blob/1.6/queryingSingleVsMultipleCarmaLinks.md">Querying Single Vs. Multiple CarmaLinks</a>  
