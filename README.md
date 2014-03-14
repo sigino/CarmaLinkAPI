@@ -1,4 +1,5 @@
-Welcome to the CarmaLink.API documentation. 
+Welcome to the CarmaLink.API documentation.  
+! New <a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.6">version 1.6</a>  
 
 <h3>CarmaLink API version 1.5</h3>
 
