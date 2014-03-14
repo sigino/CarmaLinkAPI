@@ -90,4 +90,4 @@ $response = $oauth->getLastResponse();
 print_r($response);  
 ```
   
-[Next Section: Querying Single Vs. Multiple CarmaLinks](https://github.com/CarmaSys/CarmaLinkAPI-unstable/blob/1.6/queryingSingleVsMultipleCarmaLinks.md)
+[Next Section: Querying Single Vs. Multiple CarmaLinks](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.6/queryingSingleVsMultipleCarmaLinks.md)
