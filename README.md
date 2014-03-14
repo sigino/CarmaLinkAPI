@@ -11,7 +11,7 @@ Welcome to the CarmaLink.API documentation.
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.6/summaryOfReports.md">Summary of Reports</a>   
   
 <b><a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.6/authenticationAndPermissions.md">2. Authentication & Permissions</a></b>  
-<a href="https://github.com/CarmaSys/CarmaLinkAPI-unstable/blob/1.6/queryingSingleVsMultipleCarmaLinks.md">Querying Single Vs. Multiple CarmaLinks</a>  
+<a href="https://github.com/CarmaSys/CarmaLinkAPI/blob/1.6/queryingSingleVsMultipleCarmaLinks.md">Querying Single Vs. Multiple CarmaLinks</a>  
   
 <b><a href="https://github.com/CarmaSys/CarmaLinkAPI-unstable/blob/1.6/reportConfiguration.md">3. Report Configuration</a></b>  
 <a href="https://github.com/CarmaSys/CarmaLinkAPI-unstable/blob/1.6/configurationDataCreateUpdateCommandsPUT.md">Configuration Data Create/Update Commands - PUT</a>  
