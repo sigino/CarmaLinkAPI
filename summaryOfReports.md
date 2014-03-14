@@ -155,4 +155,4 @@ IS_LOW_TIRE_PRESSURE
 IS_LOW_BATTERY_VOLTAGE  
 BATTERY_VOLTAGE
    
-[Next Section: Authentication & Permissions](https://github.com/CarmaSys/CarmaLinkAPI-unstable/blob/1.6/authenticationAndPermissions.md)
+[Next Section: Authentication & Permissions](https://github.com/CarmaSys/CarmaLinkAPI/blob/1.6/authenticationAndPermissions.md)
