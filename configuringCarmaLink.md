@@ -19,8 +19,9 @@ In this case, since we know serial number 150 exists, the 404 error means the Ca
 Whenever you need to set or update an configuration you must issue a HTTP PUT with the request body being of content-type 'application/json.' The contents request body should be a standard configuration update JSON object that looks like this:  
 
 **Sample Configuration Update Object**  
-````  {  
-    "threshold" : float,  
+```javascript  
+{    
+    "threshold" : float,    
     "allowance" : int,  
     "location"    : bool,  
     "params"  : null  
