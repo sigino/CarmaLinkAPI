@@ -20,3 +20,4 @@ Content-Length: 130
   "configId" : 95  
 }  
 ```
+[Next Section: Deleting Configurations](deletingConfigurations.md)
