@@ -241,6 +241,7 @@ Content-Length: 552
 ### Report Data API Parameters  
 | Parameter Name     | Type           | Description                                                     | Default Value        | Max   |
 | ------------------ |----------------|-----------------------------------------------------------------|----------------------|-------|
-| limit              | int            | Number of results to return in report list |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| limit              | int            | Number of results to return in report list | 20 | 50 |
+| offset             | int            | Numeric result to start result list from          | 0 | 100 |
+| since | timestamp <milliseconds>      | Return data with reportTimestamp property since this timestamp | 0 | N/A |  
+| before             | timestamp <milliseconds> | Return data with reportTimestamp before this timestamp | current timestamp | N/A |
