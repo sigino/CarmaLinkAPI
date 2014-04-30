@@ -62,3 +62,5 @@ Content-Length: 109
 ```  
 
 As you can see, we now get back a 200 and some relevant JSON data. Note that the "status" is "PENDING_ACTIVATION," this means that the CarmaLink has not yet been contacted with the new configuration from the server.   
+
+[Next Section: Getting CarmaLink Report Data](reportData.md)
