@@ -245,3 +245,5 @@ Content-Length: 552
 | offset             | int            | Numeric result to start result list from          | 0 | 100 |
 | since | timestamp <milliseconds>      | Return data with reportTimestamp property since this timestamp | 0 | N/A |  
 | before             | timestamp <milliseconds> | Return data with reportTimestamp before this timestamp | current timestamp | N/A |
+
+[Next Section: Why Would I Need "configId?"](configId.md)
