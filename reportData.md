@@ -170,3 +170,77 @@ Content-Length: 9038
 ]  
 ```  
 **WHOA WHOA WHOA!** That's a lot of information. Let's try that again with a parameter limit set to one, this only returns one result (in reverse chronological order):  
+**Input**  
+```javascript  
+curl -i -X GET https://api.carmalink.com:8282/v1/150/data/trip_report?limit=1  
+```  
+**Output**  
+```javascript  
+HTTP/1.1 200 OK  
+Date: Tue, 04 Sep 2012 19:39:28 GMT  
+Content-Type: application/json  
+Content-Length: 285  
+[ {  
+ "configId" : 155,  
+ "serial" : 150,  
+ "eventStart" : 1346781139660,  
+ "reportTimestamp" : 1346781732737,  
+ "duration" : 593077,  
+ "location" : null,  
+ "fuelConsumed" : 8.349162,  
+ "distance" : 4.3463326,  
+ "voltage" : 13.989481,  
+ "maxOverspeed" : null,  
+ "inProgress" : false  
+} ]  
+```
+
+As you can see, a trip report returns some useful information. Another option is if we wanted to get all trip reports for CarmaLink 150 since Sept. 4th, 2012 at 2:37pm EST (note this is the 3rd item's "reportTimestamp" in our large list that was first returned). In this case we'll use the parameter since set to UNIX epoch time (1346780257804) :  
+**Input**  
+```javascript  
+curl -i -X GET https://api.carmalink.com:8282/v1/150/data/trip_report?since=1346780257804  
+```
+
+**Output**  
+```javascript  
+HTTP/1.1 200 OK  
+Date: Tue, 04 Sep 2012 20:26:59 GMT  
+Content-Type: application/json  
+Content-Length: 552  
+[  
+ {  
+ "configId": 155,  
+ "serial": 150,  
+ "eventStart": 1346781139660,  
+ "reportTimestamp": 1346781732737,  
+ "duration": 593077,  
+ "location": null,  
+ "fuelConsumed": 8.349162,  
+ "distance": 4.3463326,  
+ "voltage": 13.989481,  
+ "maxOverspeed": null,  
+ "inProgress": false  
+ },  
+ {  
+ "configId": 155,  
+ "serial": 150,  
+ "eventStart": 1346781139660,  
+ "reportTimestamp": 1346781139660,  
+ "duration": 0,  
+ "location": null,  
+ "fuelConsumed": 0,  
+ "distance": 0,  
+ "voltage": 14.0398245,  
+ "maxOverspeed": null,  
+ "inProgress": true  
+ }  
+]  
+```
+✓ When using the "before" and "since" parameters with report API endpoints make sure to use EPOCH time with milliseconds.    
+
+### Report Data API Parameters  
+| Parameter Name     | Type           | Description                                                     | Default Value        | Max   |
+| ------------------ |----------------|-----------------------------------------------------------------|----------------------|-------|
+| limit              | int            | Number of results to return in report list |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
