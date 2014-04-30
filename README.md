@@ -1,4 +1,4 @@
-Welcome to the Quick Start Guide to the CarmaLink.API  
+# CarmaLink.API Quick Start Guide
 
 Unabridged Documentation:  
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.6">Version 1.6</a>  
