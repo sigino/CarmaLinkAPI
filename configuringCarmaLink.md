@@ -4,8 +4,10 @@ Once you have obtained an API key, you are ready to start making calls to the AP
 'curl -i -X GET https://api.carmalink.com:8282/v1/150/report_config/status/'  
 
 **Output**  
-`HTTP/1.1 404 Not Found  
-Date: Tue, 04 Sep 2012 18:19:00 GMT`  
+```javascript  
+HTTP/1.1 404 Not Found  
+Date: Tue, 04 Sep 2012 18:19:00 GMT  
+```  
 
 **Uh oh!** It looks as though something is wrong. In fact the issue is either:  
 
@@ -29,15 +31,21 @@ Whenever you need to set or update an configuration you must issue a HTTP PUT wi
 ````  
 You only need to send properties relevant to the configuration. In this case we're updating a device status, so we'll use 60,000ms (report back every minute). Our call will look like this:  
 **Input**  
-`curl -i -H "Content-Type:application/json" -X PUT --data "{\"threshold\": 60000}" https://api.carmalink.com:8282/v1/150/report_config/status/`  
+```javascript  
+curl -i -H "Content-Type:application/json" -X PUT --data "{\"threshold\": 60000}"   https://api.carmalink.com:8282/v1/150/report_config/status/  
+```  
 
 **Output**  
+```javascript  
 HTTP/1.1 204 No Content  
 Date: Tue, 04 Sep 2012 18:25:06 GMT  
+```
 
 API calls that return 204 are considered successful. We have successfully configured CarmaLink 150 to report status every minute. Now let's try our first call we made that resulted in an error again:  
 **Input**  
-`curl -i -X GET https://api.carmalink.com:8282/v1/150/report_config/status/`  
+```javascript  
+curl -i -X GET https://api.carmalink.com:8282/v1/150/report_config/status/  
+```  
 
 **Output**  
 ```javascript  
