@@ -1,6 +1,6 @@
 Welcome to the CarmaLink.API documentation. 
 
-<h3>CarmaLink API version 1.6</h3>  
+<h3>CarmaLink API version 1.7</h3>  
 <b>Table of Contents</b>  
   
 1. Introduction  
