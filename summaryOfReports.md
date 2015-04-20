@@ -13,7 +13,7 @@ Vehicle deceleration exceeds specified threshold.
 **Hard Cornering**  
 Vehicle lateral acceleration exceeds specified threshold.  
 
-••Idling**  
+**Idling**  
 Vehicle engine is on, but the speed is zero.  
 
 **New Deployment**  
@@ -40,6 +40,7 @@ Trip begins when vehicle engine state changes from off to on, and ends when engi
 **Vehicle Health**  
 Sent when the DTC string changes values or if any of the optional conditions are triggered.  
 
+--
 All URIs mentioned in this document are relative to https://api.carmalink.com:8282/v1/<serial>, where <serial> specifies the CarmaLink serial number(s) of interest.  
 
 All data exchanged in the API is formatted in JSON: any HTTP request or response containing a body should have the Content-Type: application/json header.  
