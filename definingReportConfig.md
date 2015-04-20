@@ -30,3 +30,44 @@ Description: This field can contain a list of strings to optionally add paramete
 JSON Name: optionalConditions  
 Value: List of strings; see Optional Conditions section  
 Description: This field can contain a list of strings that specify optional report trigger conditions. Only certain reports are allowed to be configured with optional conditions.  
+
+
+
+--
+<h2>Optional Parameters</h2>  
+The Optional Parameters field identifies 'extra' information that should be present in reports generated from this configuration. Current optional parameters include these optionalParam values:  
+
+BATTERY_VOLTAGE  
+Notes: The vehicle battery voltage as captured by CarmaLink's A/D convertor.  
+
+EMISSION_MONITORS  
+Notes: Returns emission monitor support and status information.  
+
+FUEL_LEVEL  
+Notes: Available on some vehicles.  
+
+FUEL_RATE  
+Notes: Available on most vehicles.
+
+DISTANCE_TO_SERVICE  
+This is the estimated distance until the next scheduled service as indicated by the instrument cluster. Only available on select vehicles that support this parameter.  
+
+DURATION_TO_SERVICE  
+This is the amount of time remaining until the next scheduled service as indicated by the instrument cluster. Only available on select vehicles that support this parameter.  
+
+ODOMETER  
+From the instrument cluster; only available on select vehicles that support this parameter.  
+
+IS_LOW_BATTERY_VOLTAGE  
+Available on all vehicles.  
+
+IS_LOW_TIRE_PRESSURE  
+From the instrument cluster; only available on select vehicles that support this parameter.  
+
+<h2>Optional Conditions</h2>  
+The Optional Conditions field identifies 'extra' conditions that can cause a report to be generated. Specifically, a report is created anytime a given condition changes values. Presently, only the 'Vehicle Health' report is allowed to use of these optional conditions.  
+
+optionalCondition value:  
+EMISSION_MONITORS  
+IS_LOW_BATTERY_VOLTAGE  
+IS_LOW_TIRE_PRESSURE  
