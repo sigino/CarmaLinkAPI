@@ -1,0 +1,4 @@
+<h2>Changing an existing report configuration</h2>  
+To change an existing report configuration you follow the same procedure as creating a new report configuration with the exception that you only need to include the fields you would like to change. Any field not included in the Report Configuration Update object will retain its existing value.  
+
+For a given report up to one configuration is active at a time. This means that when you change the configuration the API automatically deactivates the existing configuration, and then creates a new configuration with your changes (with a new configuration ID).  
