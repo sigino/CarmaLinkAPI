@@ -5,13 +5,10 @@ The HTTP response will have a status code of 200.
 
 The format of this *Report Configuration View* object has the same basic fields as Report Configuration Update, but includes two new fields: configuration ID and status.  
 
-Field: Configuration ID  
-JSON name: configId  
-Value: Long  
-
-Field: Status  
-JSON name: status  
-Value: String; See Status section for allowed values  
+Field | JSON name | Value  
+------|-----------|---------
+Configuration ID | configId | Long  
+Status | status | String; See Status section for allowed values  
 
 <h3>Configuration ID</h3>  
 For a given device, the server assigns a unique ID number, called the Configuration ID, to each new report configuration it receives through the API. The configuration ID provides a way to keep track of a set of value's that make up a report's configuration.  
