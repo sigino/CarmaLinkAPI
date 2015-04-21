@@ -6,3 +6,9 @@ When the buzzer configuration is updated, the configId does not change as the na
 Report name | Buzzer description
 ------------|--------------------
 Engine Overspeed | High/low two note (5 sec gap)
+Hard Acceleration | Three rising notes
+Hard Braking | Three Falling notes
+Hard Cornering | Hi/low two note (0 sec gap)
+Idling | Freefall down notes (5 sec gap)
+Overspeeding | High/low two note (5 sec gap)
+Seatbelt Unbuckled | High/low two note (3 sec gap)
