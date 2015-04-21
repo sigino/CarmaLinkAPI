@@ -1,7 +1,7 @@
 <h2>Summary of Reports</h2>  
 The following table provides a description of what types of vehicle operation the transponder can be configured to detect.  
 
-Report Name | Trigger
+Report Name | Trigger (Activation Condition)
 ------------|--------
 Engine Overspeed | Engine speed (RPM) exceeds specified threshold.
 Hard Acceleration | Vehicle acceleration exceeds specified threshold.  
