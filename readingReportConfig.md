@@ -34,3 +34,24 @@ A request to disable this configuration has been received by the server, but has
 
 Status Value: **DEACTIVATED**  
 Configuration is no longer being used by the transponder.  
+
+Usage Example  
+To continue our last example, we will read back the overspeeding configuration we recently created.  
+
+HTTP request:  
+```javascript
+GET https://api.carmalink.com:8282/v1/159821/report_config/overspeeding  
+```
+
+HTTP response body:  
+```javascript  
+{  
+  "configId" : 397746,  
+  "status" : "PENDING_ACTIVATION",  
+  "threshold" : 160.0,  
+  "allowance" : 5000,  
+  "location" : true,  
+  "buzzer" : "HIGH",  
+  "optionalParams" : [ "BATTERY_VOLTAGE", "ODOMETER" ]  
+}    
+```  
