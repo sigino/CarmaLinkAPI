@@ -14,3 +14,19 @@ PUT https://api.carmalink.com:8282/v1/159821/report_config/overspeeding
   "allowance" : 1000
 }
 ```
+On the subsequent GET, we would see something like the following response body:
+
+HTTP response body
+```javascript
+{
+  "configId" : 397748,
+  "status" : "PENDING_ACTIVATION",
+  "threshold" : 160.0,
+  "allowance" : 1000,
+  "location" : true,
+  "buzzer" : "HIGH",
+  "optionalParams" : [ "BATTERY_VOLTAGE", "ODOMETER" ]
+}
+```
+
+Note that the configuration ID is new.  
