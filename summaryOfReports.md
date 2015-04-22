@@ -19,7 +19,7 @@ Vehicle Health | Sent when the DTC string changes values or if any of the option
 
 --
 :information_source:   
-All URIs mentioned in this document are relative to `<https://api.carmalink.com:8282/v1/<serial>>`, where <serial> specifies the transponder serial number(s) of interest.  
+All URIs mentioned in this document are relative to `https://api.carmalink.com:8282/v1/<serial>`, where `<serial>` specifies the transponder serial number(s) of interest.  
 
 All data exchanged in the API is formatted in JSON: any HTTP request or response containing a body should have the Content-Type: application/json header.  
 
