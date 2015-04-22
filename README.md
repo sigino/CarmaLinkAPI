@@ -24,17 +24,11 @@ Welcome to the CarmaLink.API documentation.
 [Non-Configurable Reports](/nonConfigurable.md)  
 [Retrieving Report Data](/retrievingReportData.md)  
 
-4. Authentication & Permissions  
+[4. Authentication & Permissions](/authenticationPermissions.md)  
 
-5. Revision History  
-Summary of changes since v1.1  
-Summary of changes since v1.2  
-Summary of changes since v1.3  
-Summary of changes since v1.4  
-Summary of changes since v1.5  
-Summary of changes since v1.6  
+[5. Revision History](/)  
 
-6. Referenced Documents & Standards  
+[6. Referenced Documents & Standards](/)  
 
 
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.6">Version 1.6</a>  
