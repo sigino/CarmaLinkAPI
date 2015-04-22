@@ -4,8 +4,8 @@ A report configuration is created by using the PUT method on the report's config
 Not all reports support all fields and some have restrictions regarding the requested values. Any field that is optional and has no default value will default to 'null'.  
 
 :information_source:    
-* <em>All report configuration URIs are relative to /report_config  
-* The success code is 204 (No Content)  </em>
+> All report configuration URIs are relative to /report_config  
+> The success code is 204 (No Content)
 
 **"Engine Overspeed" Report**  
 URL: `/engine_overspeed`  
