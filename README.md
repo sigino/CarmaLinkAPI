@@ -24,7 +24,7 @@ Welcome to the CarmaLink.API documentation.
 [Non-Configurable Reports](/nonConfigurable.md)  
 [Retrieving Report Data](/retrievingReportData.md)  
 
-[4. Authentication & Permissions](/authenticationPermissions.md)  
+[4. Authentication & Permissions](/4authenticationPermissions.md)  
 
 [5. Revision History](/)  
 
