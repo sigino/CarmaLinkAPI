@@ -6,7 +6,15 @@ Not all reports support all fields and some have restrictions regarding the requ
 > :information_source:   
 >
 > All report configuration URIs are relative to /report_config  
-> The success code is 204 (No Content)
+> The success code is 204 (No Content)  
+
+Report | URI | Allowance | Threshold | Location | Buzzer | Optional Parameters | Optional Conditions
+-------|-----|-----------|-----------|----------|--------|---------------------|---------------------
+Engine Overspeed | /engine_overspeed | optional, defaults to 0 | required, units of RPM, must be > 0 | optional, defaults to false | optional | optional | not supported  
+
+
+
+
 
 **"Engine Overspeed" Report**  
 URL: `/engine_overspeed`  
