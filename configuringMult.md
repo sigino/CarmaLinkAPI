@@ -78,7 +78,66 @@ HTTP response
   "errors" : {}
 }
 ```  
-
+--  
 Reading back this same configuration:  
-
+HTTP request  
+```javescript
+GET https://api.carmalink.com:8282/v1/8.18-20.25/report_config/overspeeding  
+```  
+--  
+HTTP response  
+```javascript
+Content-Type: application/json
+{
+  "data" : {
+    "8": {
+      "configId" : 96185,
+      "status" : "PENDING_ACTIVATION",
+      "threshold" : 160.0,
+      "allowance" : 5000,
+      "location" : true,
+      "buzzer" : "HIGH",
+      "optionalParams" : [ "BATTERY_VOLTAGE", "ODOMETER" ]
+    },
+    "18": {
+      "configId" : 85547,
+      "status" : "PENDING_ACTIVATION",
+      "threshold" : 160.0,
+      "allowance" : 5000,
+      "location" : true,
+      "buzzer" : "HIGH",
+      "optionalParams" : [ "BATTERY_VOLTAGE", "ODOMETER" ]
+    },
+    "19": {
+      "configId" : 20147,
+      "status" : "PENDING_ACTIVATION",
+      "threshold" : 160.0,
+      "allowance" : 5000,
+      "location" : true,
+      "buzzer" : "HIGH",
+      "optionalParams" : [ "BATTERY_VOLTAGE", "ODOMETER" ]
+    },
+    "20": {
+      "configId" : 31088,
+      "status" : "PENDING_ACTIVATION",
+      "threshold" : 160.0,
+      "allowance" : 5000,
+      "location" : true,
+      "buzzer" : "HIGH",
+      "optionalParams" : [ "BATTERY_VOLTAGE", "ODOMETER" ]
+    },
+    "25": {
+      "configId" : 16943,
+      "status" : "PENDING_ACTIVATION",
+      "threshold" : 160.0,
+      "allowance" : 5000,
+      "location" : true,
+      "buzzer" : "HIGH",
+      "optionalParams" : [ "BATTERY_VOLTAGE", "ODOMETER" ]
+    }
+ },
+  "errors" : {}
+}
+```  
+--
 
