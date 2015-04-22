@@ -3,7 +3,7 @@ Welcome to the CarmaLink.API documentation.
 <h3>CarmaLink API version 1.7</h3>  
 <b>Table of Contents</b>  
   
-1. Introduction  
+[1. Introduction](/introduction.md)  
 Overview  
 Summary of Reports  
   
