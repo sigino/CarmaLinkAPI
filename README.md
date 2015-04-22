@@ -7,7 +7,7 @@ Welcome to the CarmaLink.API documentation.
 [Overview](/introduction.md)  
 [Summary of Reports](/summaryOfReports.md)  
   
-[2. Configuration](/configuration.md)  
+[2. Configuration](/2configuration.md)  
 Defining a report configuration  
 Creating a new report configuration  
 Reading a report configuration  
