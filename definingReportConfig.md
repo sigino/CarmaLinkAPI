@@ -6,7 +6,7 @@ Field | JSON Name | Value type | Description
 Threshold | threshold | Float; units specific to each report type | Specifies a value that is the trigger for the report to begin.
 Allowance | allowance | Integer; number of milliseconds | Specifies a time duration over which the report's event trigger (value exceeding threshold) must remain set before the report is actually triggered. The allowance acts as a filtering mechanism, so that events that are too brief to be considered relevant are ignored.
 Location | location | Boolean; true or false | Specifies whether location information should be included in the generated report.  
-Buzzer | buzzer | String; "OFF","MEDIUM" or "HIGH" | Specifies the volume of the CarmaLink's buzzer when the event is triggered. If never assigned for the report, the buzzer defaults to "OFF".  
+Buzzer | buzzer | String; "OFF","MEDIUM" or "HIGH" | Specifies the volume of the transponder's buzzer when the event is triggered. If never assigned for the report, the buzzer defaults to "OFF".  
 Optional Parameters | optionalParams | List of strings; see Optional Parameters section | This field can contain a list of strings to optionally add parameters to a report.  
 Optional Conditions | optionalConditions | List of strings; see Optional Conditions section | This field can contain a list of strings that specify optional report trigger conditions. Only certain reports are allowed to be configured with optional conditions.  
 
