@@ -32,17 +32,17 @@ One special quality of the location object is that it includes its own timestamp
 
 ### Optional Parameters Data Object  
 The Optional Parameters Data object includes any parameters specified in the report's configuration, and could include:  
-Field | JSON Name | Value type | Units | Notes  
-------|-----------|------------|-------|--------  
-Battery voltage | batteryVoltage | Float | Volts | Typically accurate to within 50mV.    
-Emission monitors | emissionMonitors | Integer | - | This is the bit-encoded value returned by an OBD-II (SAE J1979) Mode 1, PID 1 request that indicates which emission monitors are supported and which are incomplete.  
-Fuel level | fuelLevel | Float | % | Reported as a decimal (0.5 = 50%)  
+Field | JSON Name | Value type | Units | Notes
+------|-----------|------------|-------|-------
+Battery voltage | batteryVoltage | Float | Volts | Typically accurate to within 50mV.
+Emission monitors | emissionMonitors | Integer | - | This is the bit-encoded value returned by an OBD-II (SAE J1979) Mode 1, PID 1 request that indicates which emission monitors are supported and which are incomplete.
+Fuel level | fuelLevel | Float | % | Reported as a decimal (0.5 = 50%)
 Fuel rate | fuelRate | Float | liters/hour | Engine configuration should be set to ensure this value is as accurate as possible.
-Distance to service | distanceToService | Integer | km | When available, it is accurate to the nearest ten kilometers.   
+Distance to service | distanceToService | Integer | km | When available, it is accurate to the nearest ten kilometers.
 Duration to service | durationToService | Integer | Milliseconds | When available, it is accurate to the nearest day (86400000 ms).
-Odometer | odometer | Float | km | Accuracy is typically +/- 10km when available.  
-Is low battery voltage | isLowBatteryVoltage | Boolean | true or false | Indicates that the battery voltage is low enough where starting the engine might soon become difficult.  
-Is low tire pressure | isLowTirePressure | Boolean | true or false | This will correspond to a 'low tire pressure' warning light being illuminated on the dash.  
+Odometer | odometer | Float | km | Accuracy is typically +/- 10km when available.
+Is low battery voltage | isLowBatteryVoltage | Boolean | true or false | Indicates that the battery voltage is low enough where starting the engine might soon become difficult.
+Is low tire pressure | isLowTirePressure | Boolean | true or false | This will correspond to a 'low tire pressure' warning light being illuminated on the dash.
 
 As indicated in the report configuration section, values for these parameters will only be included in the Optional Parameters Data object if the deployment (vehicle) supports them. Many of these parameters are not 'standard' OBD-II data, and so it is possible that for your make/model of vehicle, this data will not be available. If this is the case, these fields will simply not be included in the Optional Parameters object.  
 
