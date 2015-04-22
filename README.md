@@ -4,8 +4,8 @@ Welcome to the CarmaLink.API documentation.
 <b>Table of Contents</b>  
   
 [1. Introduction](/introduction.md)  
-Overview  
-Summary of Reports  
+[Overview](/introduction.md)  
+[Summary of Reports](/summaryOfReports.md)  
   
 2. Configuration  
 Defining a report configuration  
