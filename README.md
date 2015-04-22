@@ -19,8 +19,8 @@ Welcome to the CarmaLink.API documentation.
 [Configuring Multiple CarmaLinks](/configuringMult.md)  
 
 [3. Report Data](/3reportData.md)    
-Report Data Structure  
-Report Types  
+[Report Data Structure](/reportDataStructure.md)  
+[Report Types](/reportTypes.md)  
 Non-Configurable Reports  
 Retrieving Report Data  
 
