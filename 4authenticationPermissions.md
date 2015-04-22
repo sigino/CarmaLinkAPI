@@ -1,4 +1,4 @@
-## Authentication & permissions  
+## 4. Authentication & permissions  
 
 ### Authentication  
 Two legged OAuth is the method used for parties to verify each other's identity. The OAuth 1.0a specification can be found at http://oauth.net/core/1.0a/.  
