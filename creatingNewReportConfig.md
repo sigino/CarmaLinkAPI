@@ -14,87 +14,14 @@ Engine Overspeed | `/engine_overspeed` | optional, defaults to 0 | required, uni
 Hard Acceleration | `/hard_accel` | optional, defaults to 0 | required, units of meters/sec^2, must be > 0 | optional, defaults to false | optional | optional | not supported   
 Hard Braking | `/hard_braking` | optional, defaults to 0 | required, units of meters/sec^2, must be < 0 | optional, defaults to false | optional | optional | not supported  
 Hard Cornering | `/hard_cornering` | optional, defaults to 0 | required, units of meters/sec^2, must be > 0 | optional, defaults to false | optional | optional | not supported  
-
-**"Hard Cornering" Report**  
-URL: `/hard_cornering`  
-Allowance: optional, defaults to 0  
-Threshold: required, units of meters/sec^2, must be > 0  
-Location: optional, defaults to false  
-Buzzer: optional  
-Optional Parameters: optional  
-Optional Conditions: not supported  
-
-**"Status" Report**  
-URL: `/status`  
-Allowance: optional, defaults to 0  
-Threshold: required, identifies send interval in msec, must be ≥ 5000  
-Location: optional, defaults to false  
-Buzzer: ignored  
-Optional Parameters: optional  
-Optional Conditions: not supported  
-
-**"Idling" Report**  
-URL: `/idling`  
-Allowance: required, ≥ 5000  
-Threshold: ignored  
-Location: optional, defaults to false  
-Buzzer: optional  
-Optional Parameters: optional  
-Optional Conditions: not supported  
-
-**"Overspeeding" Report**  
-URL: `/overspeeding`  
-Allowance: optional, defaults to 0  
-Threshold: required, units of km/hr, must be ≥ 50  
-Location: optional, defaults to false  
-Buzzer: optional  
-Optional Parameters: optional  
-Optional Conditions: not supported  
-
-**"Parking" Report**  
-URL: `/parking`  
-Allowance: = 0  
-Threshold: required, identifies send interval in msec, must be ≥ 1800000  
-Location: optional, defaults to false  
-Buzzer: ignored  
-Optional Parameters: optional  
-Optional Conditions: not supported  
-
-**"Seatbelt Unbuckled" Report**  
-URL: `/seatbelt`  
-Allowance: optional, defaults to 0  
-Threshold: Identifies minimum vehicle speed, must be > 0  
-Location: optional, defaults to false  
-Buzzer: optional  
-Optional Parameters: optional  
-Optional Conditions: not supported  
-
-**"Transported" Report**  
-URL: `/transported`  
-Allowance: optional, defaults to 0  
-Threshold: required, identifies send interval in msec, must be ≥ 30000  
-Location: optional, defaults to false  
-Buzzer: ignored  
-Optional Parameters: optional  
-Optional Conditions: not supported  
-
-**"Trip Summary" Report**  
-URL: `/trip_report`  
-Allowance: optional, defaults to 0  
-Threshold: ignored  
-Location: optional, defaults to false  
-Buzzer: ignored  
-Optional Parameters: optional  
-Optional Conditions: not supported  
-
-**"Vehicle Health" Report**  
-URL: `/vehicle_health`  
-Allowance: = 0  
-Threshold: ignored  
-Location: optional, defaults to false  
-Buzzer: ignored  
-Optional Parameters: optional  
-Optional Conditions: optional  
+Status | `/status` | optional, defaults to 0 | required, identifies send interval in msec, must be ≥ 5000 | optional, defaults to false | ignored | optional | not supported  
+Idling | `/idling` | required, ≥ 5000 | ignored | optional, defaults to false | optional | optional | not supported  
+Overspeeding | `/overspeeding` | optional, defaults to 0 | required, units of km/hr, must be ≥ 50 | optional, defaults to false | optional | optional | not supported  
+Parking | `/parking` | = 0 | required, identifies send interval in msec, must be ≥ 1800000 | optional, defaults to false | ignored | optional | not supported  
+Seatbelt Unbuckled | `/seatbelt` | optional, defaults to 0 | Identifies minimum vehicle speed, must be > 0 | optional, defaults to false | optional | optional | not supported  
+Transported | `/transported` | optional, defaults to 0 | required, identifies send interval in msec, must be ≥ 30000 | optional, defaults to false | ignored | optional | not supported  
+Trip Summary | `/trip_report` | optional, defaults to 0 | ignored | optional, defaults to false | ignored | optional | optional | not supported  
+Vehicle Health | `/vehicle_health` | = 0 | ignored | optional, defaults to false | ignored | optional | optional  
 
 
 --
