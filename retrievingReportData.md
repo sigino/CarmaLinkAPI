@@ -102,3 +102,5 @@ Note that because we received less reports than our limit, this is the oldest Ov
 
 ### Getting all report data  
 The previous example touches on how you would go about getting all data for a given type of report: basically, you want to keep setting your "before" query value to the oldest reportTimestamp you've captured until you have a response with less than the maximum ("limit") number of reports.  
+
+:clock5: diagram coming soon
