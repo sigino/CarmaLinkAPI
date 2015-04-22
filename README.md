@@ -4,11 +4,11 @@ Welcome to the CarmaLink.API documentation.
 <b>Table of Contents</b>  
   
 [1. Introduction](/introduction.md)  
-    [Overview](/introduction.md)  
-    [Summary of Reports](/summaryOfReports.md)  
+[Overview](/introduction.md)  
+[Summary of Reports](/summaryOfReports.md)  
   
 [2. Configuration](/2configuration.md)  
-    [Defining a report configuration](/definingReportConfig.md)  
+[Defining a report configuration](/definingReportConfig.md)  
 [Creating a new report configuration](/creatingNewReportConfig.md)  
 [Reading a report configuration](/readingReportConfig.md)  
 [Disabling a report configuration](/disablingReportConfig.md)  
@@ -16,9 +16,9 @@ Welcome to the CarmaLink.API documentation.
 [Examining inactive report configurations](/examiningInactive.md)  
 [Buzzer configuration](/buzzerConfig.md)  
 [Engine configuration](/engineConfig.md)  
-Configuring Multiple CarmaLinks  
+[Configuring Multiple CarmaLinks](/configuringMult.md)  
 
-3. Report Data  
+[3. Report Data](/3reportData.md)    
 Report Data Structure  
 Report Types  
 Non-Configurable Reports  
