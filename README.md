@@ -21,8 +21,8 @@ Welcome to the CarmaLink.API documentation.
 [3. Report Data](/3reportData.md)    
 [Report Data Structure](/reportDataStructure.md)  
 [Report Types](/reportTypes.md)  
-Non-Configurable Reports  
-Retrieving Report Data  
+[Non-Configurable Reports](/nonConfigurable.md)  
+[Retrieving Report Data](/retrievingReportData.md)  
 
 4. Authentication & Permissions  
 
