@@ -8,14 +8,14 @@ Welcome to the CarmaLink.API documentation.
 [Summary of Reports](/summaryOfReports.md)  
   
 [2. Configuration](/2configuration.md)  
-Defining a report configuration  
-Creating a new report configuration  
-Reading a report configuration  
-Disabling a report configuration  
-Changing an existing report configuration  
-Examining inactive report configurations  
-Buzzer configuration  
-Engine configuration  
+[Defining a report configuration](/definingReportConfig.md)  
+[Creating a new report configuration](/creatingNewReportConfig.md)  
+[Reading a report configuration](/readingReportConfig.md)  
+[Disabling a report configuration](/disablingReportConfig.md)  
+[Changing an existing report configuration](/changingExistingConfig.md)  
+[Examining inactive report configurations](/examiningInactive.md)  
+[Buzzer configuration](/buzzerConfig.md)  
+[Engine configuration](/engineConfig.md)  
 Configuring Multiple CarmaLinks  
 
 3. Report Data  
