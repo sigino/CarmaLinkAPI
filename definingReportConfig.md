@@ -1,13 +1,15 @@
 <h2>Defining a report configuration</h2>  
-For each report of interest, the API user must send configuration information to the appropriate URI. This <b>Report Configuration Update object</b> in JSON format characterizes the vehicle activity that should be detected, and will have some or all of the following fields:  
+For each report of interest, the API user must send configuration information to the appropriate URI. This Report Configuration Update object in JSON format characterizes the vehicle activity that should be detected, and will have some or all of the following fields:  
+
+:information_source: *For all JSON objects discussed in this document, the 'Value type' is in reference to the native data-type the server uses to store this information.*
 
 Field | JSON Name | Value type | Description 
 ------|-----------|------------|------------
 Threshold | threshold | Float; units specific to each report type | Specifies a value that is the trigger for the report to begin.
 Allowance | allowance | Integer; number of milliseconds | Specifies a time duration over which the report's event trigger (value exceeding threshold) must remain set before the report is actually triggered. The allowance acts as a filtering mechanism, so that events that are too brief to be considered relevant are ignored.
-Location | location | Boolean; true or false | Specifies whether location information should be included in the generated report.  
-Buzzer | buzzer | String; "OFF","MEDIUM" or "HIGH" | Specifies the volume of the transponder's buzzer when the event is triggered. If never assigned for the report, the buzzer defaults to "OFF".  
-Optional Parameters | optionalParams | List of strings; see Optional Parameters section | This field can contain a list of strings to optionally add parameters to a report.  
+Location | location | Boolean; true or false | Specifies whether location information should be included in the generated report.
+Buzzer | buzzer | String; "OFF","MEDIUM" or "HIGH" | Specifies the volume of the transponder's buzzer when the event is triggered. If never assigned for the report, the buzzer defaults to "OFF".
+Optional Parameters | optionalParams | List of strings; see Optional Parameters section | This field can contain a list of strings to optionally add parameters to a report.
 Optional Conditions | optionalConditions | List of strings; see Optional Conditions section | This field can contain a list of strings that specify optional report trigger conditions. Only certain reports are allowed to be configured with optional conditions.  
 
 
@@ -18,7 +20,7 @@ The Optional Parameters field identifies 'extra' information that should be pres
 
 optionalParam value | Notes
 --------------------|-------
-BATTERY_VOLTAGE | The vehicle battery voltage as captured by CarmaLink's A/D convertor.  
+BATTERY_VOLTAGE | The vehicle battery voltage as captured by the transponder's A/D convertor.  
 EMISSION_MONITORS | Returns emission monitor support and status information.  
 FUEL_LEVEL | Available on some vehicles.  
 FUEL_RATE | Available on most vehicles.
@@ -29,7 +31,7 @@ IS_LOW_BATTERY_VOLTAGE | Available on all vehicles.
 IS_LOW_TIRE_PRESSURE | From the instrument cluster; only available on select vehicles that support this parameter.  
 
 <h2>Optional Conditions</h2>  
-The Optional Conditions field identifies 'extra' conditions that can cause a report to be generated. Specifically, a report is created anytime a given condition changes values. Presently, only the 'Vehicle Health' report is allowed to use of these optional conditions.  
+The Optional Conditions field identifies `'extra'` conditions that can cause a report to be generated. Specifically, a report is created anytime a given condition changes values. Presently, only the `'Vehicle Health'` report is allowed to use of these optional conditions.  
 
 optionalCondition value:  
 EMISSION_MONITORS  
