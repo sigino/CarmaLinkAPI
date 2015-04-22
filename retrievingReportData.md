@@ -5,9 +5,9 @@ Report data is retrieved from the API using a GET request on the report's data U
 There are four optional query parameters that can be used in a report data request:  
 Parameter | Description  
 ----------|-------------  
-`before=<time_milliseconds>` |	The POSIX time in milliseconds after which no newer data should be returned (exclusive, default is current time)
-`since=<time_milliseconds>` |	The POSIX time in milliseconds before which no older data should be returned (exclusive, default is 0)
-`limit=<integer>` |	The maximum number of reports to display (default is 50, maximum is 250)
+`before=<time_milliseconds>` |	The POSIX time in milliseconds after which no newer data should be returned (exclusive, default is current time)  
+`since=<time_milliseconds>` |	The POSIX time in milliseconds before which no older data should be returned (exclusive, default is 0)  
+`limit=<integer>` |	The maximum number of reports to display (default is 50, maximum is 250)  
 `offset=<integer>` |	The number of most recent reports to ignore in the returned data (default is 0, maximum is 100)  
 
 Generally speaking:  
