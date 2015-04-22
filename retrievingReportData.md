@@ -3,6 +3,7 @@ Report data is retrieved from the API using a GET request on the report's data U
 
 ### Filtering  
 There are four optional query parameters that can be used in a report data request:  
+
 Parameter | Description  
 ----------|-------------  
 `before=<time_milliseconds>` |	The POSIX time in milliseconds after which no newer data should be returned (exclusive, default is current time)  
