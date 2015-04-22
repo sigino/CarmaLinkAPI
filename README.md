@@ -26,9 +26,9 @@ Welcome to the CarmaLink.API documentation.
 
 [4. Authentication & Permissions](/4authenticationPermissions.md)  
 
-[5. Revision History](/)  
+[5. Revision History](/5revisionHistory.md)  
 
-[6. Referenced Documents & Standards](/)  
+[6. Referenced Documents & Standards](/6referencedDocStand.md)  
 
 
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.6">Version 1.6</a>  
