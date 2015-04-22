@@ -16,7 +16,7 @@ Authorization: OAuth oauth_consumer_key="JiYm4l74tXddzz4snnIDeg",oauth_nonce="97
 ```
 --  
 Ruby Example  
-```javascript  
+```ruby  
 #!/usr/bin/env ruby -rubygems
 # gem install oauth
  
@@ -30,7 +30,7 @@ print response.body
 ```
 --
 Python Example  
-```javascript  
+```python  
 # Utilizes Leah Culver's OAuth library
 # http://oauth.googlecode.com/svn/code/python/
 # to install: $ easy_install oauth
@@ -71,7 +71,7 @@ print 'response: %s' % str(result)
 ```
 --
 PHP Example  
-```javascript
+```php
 <?php
 define('CONSUMER_KEY','JiYmll7CX3AXDgasnnIDeg');
 define('CONSUMER_SECRET','mWPBRK5kG2Tkthuf5zRV1jYWOEwnjI6xs3QVRqOOg');
