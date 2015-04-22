@@ -32,6 +32,8 @@ One special quality of the location object is that it includes its own timestamp
 
 ### Optional Parameters Data Object  
 The Optional Parameters Data object includes any parameters specified in the report's configuration, and could include:  
+
+
 Field | JSON Name | Value type | Units | Notes
 ------|-----------|------------|-------|-------
 Battery voltage | batteryVoltage | Float | Volts | Typically accurate to within 50mV.
