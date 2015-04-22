@@ -4,11 +4,11 @@ Welcome to the CarmaLink.API documentation.
 <b>Table of Contents</b>  
   
 [1. Introduction](/introduction.md)  
-[Overview](/introduction.md)  
-[Summary of Reports](/summaryOfReports.md)  
+    [Overview](/introduction.md)  
+    [Summary of Reports](/summaryOfReports.md)  
   
 [2. Configuration](/2configuration.md)  
-[Defining a report configuration](/definingReportConfig.md)  
+    [Defining a report configuration](/definingReportConfig.md)  
 [Creating a new report configuration](/creatingNewReportConfig.md)  
 [Reading a report configuration](/readingReportConfig.md)  
 [Disabling a report configuration](/disablingReportConfig.md)  
