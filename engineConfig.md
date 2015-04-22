@@ -1,6 +1,9 @@
 <h2>Engine configuration</h2>  
 The transponder has the ability to provide fuel consumption information in vehicles that support OBD-II (light-duty) or SAE J1939 (heavy-duty). Sometimes this data is directly available from the vehicle, but many times it must be estimated based on various sensor values. To assist in making the transponder's fuel consumption calculations as accurate as possible it helps to provide it the vehicle's fuel type and engine displacement using the API's engine configuration resource.  
-> :information_source: All engine configuration request URIs are relative to /config/engine  
+
+> :information_source:  
+>  
+> All engine configuration request URIs are relative to /config/engine  
 
 <h3>Creating a new engine configuration</h3>  
 To create a new engine configuration for a given serial number, you must send a new PUT request containing the **Engine Configuration Update object** in JSON format, which will have the following fields:  
