@@ -26,7 +26,7 @@ Vehicle Health | `/vehicle_health` | = 0 | ignored | optional, defaults to false
 
 --
 <h3>Usage Example</h3>  
-In this example, we configure CarmaLink serial number 159821's 'overspeeding' threshold to 129kph (~80mph), with a 5 second allowance, and we'd like the generated report to include location, an odometer reading, and the vehicle's battery voltage.  Also, the buzzer should sound an alert at high volume to let the driver know they are going too fast.  
+In this example, we configure the transponder's serial number 159821's 'Overspeeding' threshold to 129kph (~80mph), with a 5 second allowance, and we'd like the generated report to include location, an odometer reading, and the vehicle's battery voltage.  Also, the buzzer should sound an alert at high volume to let the driver know they are going too fast.  
 
 ```javascript
 PUT https://api.carmalink.com:8282/v1/159821/report_config/overspeeding  
