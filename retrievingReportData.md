@@ -2,9 +2,9 @@
 Report data is retrieved from the API using a GET request on the report's data URI. The response will include a reverse-chronological sorted list of up to 50 of the most recent Report Data objects for the given report type. To modify the scope of the data returned you'll need to include a query string that contains one or more of the parameters described in the next section.  
 
 ### Filtering  
-There are four optional query parameters that can be used in a report data request:  
+There are four optional query parameters that can be used in a report data request:   
 Parameter | Description 
-----------|-------------
+----------|-------------  
 before=<time_milliseconds> |	The POSIX time in milliseconds after which no newer data should be returned (exclusive, default is current time)
 since=<time_milliseconds> |	The POSIX time in milliseconds before which no older data should be returned (exclusive, default is 0)
 limit=<integer> |	The maximum number of reports to display (default is 50, maximum is 250)
