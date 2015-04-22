@@ -1,6 +1,13 @@
 <h2>Defining a report configuration</h2>  
 For each report of interest, the API user must send configuration information to the appropriate URI. This <b>Report Configuration Update object</b> in JSON format characterizes the vehicle activity that should be detected, and will have some or all of the following fields:  
 
+Field | JSON Name | Value type | Description 
+------|-----------|------------|------------
+Threshold | threshold | Float; units specific to each report type | Specifies a value that is the trigger for the report to begin.
+Allowance | allowance | Integer; number of milliseconds | Specifies a time duration over which the report's event trigger (value exceeding threshold) must remain set before the report is actually triggered. The allowance acts as a filtering mechanism, so that events that are too brief to be considered relevant are ignored.
+
+
+
 **Threshold**  
 JSON Name: threshold  
 Value: Float; units specific to each report type  
