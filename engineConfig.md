@@ -6,7 +6,7 @@ The transponder has the ability to provide fuel consumption information in vehic
 > All engine configuration request URIs are relative to /config/engine  
 
 <h3>Creating a new engine configuration</h3>  
-To create a new engine configuration for a given serial number, you must send a new PUT request containing the **Engine Configuration Update object** in JSON format, which will have the following fields:  
+To create a new engine configuration for a given serial number, you must send a new PUT request containing the **Engine Configuration Update** object in JSON format, which will have the following fields:  
 
 Field | JSON Name | Value type
 ------|-----------|-----------
@@ -16,7 +16,7 @@ Engine displacement | displacement | Float; volume of the engine in liters
 If the operation is successful, the HTTP response will have a status code of 204.  
 
 <h3>Reading an engine configuration</h3>  
-Like report configurations, there is a corresponding **Engine Configuration View object**, which contains the same fields as the Engine Configuration Update object, but also includes a "status" field that has one of the 4 string values from the section describing Report Configuration View objects.  
+Like report configurations, there is a corresponding **Engine Configuration View** object, which contains the same fields as the Engine Configuration Update object, but also includes a "status" field that has one of the 4 string values from the section describing Report Configuration View objects.  
 
 <h3>Usage example</h3>  
 If we have installed our transponder in a Ford Mustang with a 5.0 liter engine, we would create the following engine configuration:  
