@@ -11,28 +11,7 @@ Not all reports support all fields and some have restrictions regarding the requ
 Report | URI | Allowance | Threshold | Location | Buzzer | Optional Parameters | Optional Conditions
 -------|-----|-----------|-----------|----------|--------|---------------------|---------------------
 Engine Overspeed | /engine_overspeed | optional, defaults to 0 | required, units of RPM, must be > 0 | optional, defaults to false | optional | optional | not supported  
-
-
-
-
-
-**"Engine Overspeed" Report**  
-URL: `/engine_overspeed`  
-Allowance: optional, defaults to 0  
-Threshold: required, units of RPM, must be > 0  
-Location: optional, defaults to false  
-Buzzer: optional  
-Optional Parameters: optional  
-Optional Conditions: not supported  
-
-**"Hard Acceleration" Report**  
-URL: `/hard_accel`  
-Allowance: optional, defaults to 0  
-Threshold: required, units of meters/sec^2, must be > 0  
-Location: optional, defaults to false  
-Buzzer: optional  
-Optional Parameters: optional  
-Optional Conditions: not supported  
+Hard Acceleration | `/hard_accel` | optional, defaults to 0 | required, units of meters/sec^2, must be > 0 | optional, defaults to false | optional | optional | not supported  
 
 **"Hard Braking" Report**  
 URL: `/hard_braking`  
