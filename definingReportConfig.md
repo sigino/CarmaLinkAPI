@@ -33,7 +33,7 @@ IS_LOW_TIRE_PRESSURE | From the instrument cluster; only available on select veh
 <h2>Optional Conditions</h2>  
 The Optional Conditions field identifies `'extra'` conditions that can cause a report to be generated. Specifically, a report is created anytime a given condition changes values. Presently, only the `'Vehicle Health'` report is allowed to use of these optional conditions.  
 
-optionalCondition value:  
+<h3>optionalCondition value:</h3>  
 EMISSION_MONITORS  
 IS_LOW_BATTERY_VOLTAGE  
 IS_LOW_TIRE_PRESSURE  
