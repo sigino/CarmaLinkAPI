@@ -47,3 +47,5 @@ HTTP response body:
   "optionalParams" : [ "BATTERY_VOLTAGE", "ODOMETER" ]  
 }    
 ```  
+
+[:fast_forward: Next Section: Disabling a report configuration](/disablingReportConfig.md)
