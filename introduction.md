@@ -9,4 +9,4 @@ The CarmaLink.API is a publicly available RESTful web interface. All configurati
 
 In this document you will learn how to use the API to properly configure your transponders and acquire the data they generate. 
 
-[:fast_forward: Next Section: Summary of Reports](/summaryOfReports.md)  
+[:fast_forward: Next Section: Summary of reports](/summaryOfReports.md)  
