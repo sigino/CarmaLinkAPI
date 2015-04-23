@@ -84,4 +84,6 @@ $oauth = new OAuth(CONSUMER_KEY,CONSUMER_SECRET);
 $oauth->fetch(PROTOCOL.HOST.':'.PORT.RESOURCE_PATH,null,OAUTH_HTTP_METHOD_GET)
 $response = $oauth->getLastResponse();
 print_r($response);
-```
+```  
+
+[:fast_forward: Next Section: 5. Revision History](/5revisionHistory.md)
