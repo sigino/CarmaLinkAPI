@@ -1,5 +1,7 @@
 <h2>1. Introduction</h2>  
-:information_source: For further customer support, email us at <a href="mailto:support@carmasys.com?Subject=API%20v1.6">
+> :information_source:  
+>  
+> For further customer support, email us at <a href="mailto:support@carmasys.com?Subject=API%20v1.6">
 support@carmasys.com</a>  
 
 <b>Overview</b>  
