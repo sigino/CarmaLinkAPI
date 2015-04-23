@@ -46,4 +46,4 @@ PUT https://api.carmalink.com:8282/v1/159821/config/engine
 }
 ```  
 
-[:fast_forward: Next Section: Configuring Multiple CarmaLinks](/configuringMult.md)
+[:fast_forward: Next Section: Configuring multiple transponders](/configuringMult.md)
