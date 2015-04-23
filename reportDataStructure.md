@@ -52,3 +52,5 @@ Unlike the Location object, all values in the Optional Parameters Data object ar
 
 ### Other report data  
 In addition to this standard and optional data included in a Report Data object, some reports include additional data fields as standard. These fields will be mentioned in each report's respective section.  
+
+[:fast_forward: Next Section: Report types](/reportTypes.md)
