@@ -1,7 +1,9 @@
 <h2>Defining a report configuration</h2>  
 For each report of interest, the API user must send configuration information to the appropriate URI. This Report Configuration Update object in JSON format characterizes the vehicle activity that should be detected, and will have some or all of the following fields:  
 
-:information_source: *For all JSON objects discussed in this document, the 'Value type' is in reference to the native data-type the server uses to store this information.*
+> :information_source:  
+>  
+> *For all JSON objects discussed in this document, the 'Value type' is in reference to the native data-type the server uses to store this information.*
 
 Field | JSON Name | Value type | Description 
 ------|-----------|------------|------------
