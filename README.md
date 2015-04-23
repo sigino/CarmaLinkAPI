@@ -16,7 +16,7 @@ Welcome to the CarmaLink.API documentation.
 [Examining inactive report configurations](/examiningInactive.md)  
 [Buzzer configuration](/buzzerConfig.md)  
 [Engine configuration](/engineConfig.md)  
-[Configuring Multiple CarmaLinks](/configuringMult.md)  
+[Configuring multiple transponders](/configuringMult.md)  
 
 [3. Report Data](/3reportData.md)    
 [Report Data Structure](/reportDataStructure.md)  
