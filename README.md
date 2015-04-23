@@ -5,7 +5,7 @@ Welcome to the CarmaLink.API documentation.
   
 [1. Introduction](/introduction.md)  
 [Overview](/introduction.md)  
-[Summary of Reports](/summaryOfReports.md)  
+[Summary of reports](/summaryOfReports.md)  
   
 [2. Configuration](/2configuration.md)  
 [Defining a report configuration](/definingReportConfig.md)  
@@ -18,17 +18,17 @@ Welcome to the CarmaLink.API documentation.
 [Engine configuration](/engineConfig.md)  
 [Configuring multiple transponders](/configuringMult.md)  
 
-[3. Report Data](/3reportData.md)    
-[Report Data Structure](/reportDataStructure.md)  
-[Report Types](/reportTypes.md)  
-[Non-Configurable Reports](/nonConfigurable.md)  
-[Retrieving Report Data](/retrievingReportData.md)  
+[3. Report data](/3reportData.md)    
+[Report data structure](/reportDataStructure.md)  
+[Report types](/reportTypes.md)  
+[Non-configurable reports](/nonConfigurable.md)  
+[Retrieving report data](/retrievingReportData.md)  
 
-[4. Authentication & Permissions](/4authenticationPermissions.md)  
+[4. Authentication & permissions](/4authenticationPermissions.md)  
 
 [5. Revision History](/5revisionHistory.md)  
 
-[6. Referenced Documents & Standards](/6referencedDocStand.md)  
+[6. Referenced documents & standards](/6referencedDocStand.md)  
 
 
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.6">Version 1.6</a>  
