@@ -18,10 +18,10 @@ If the operation is successful, the HTTP response will have a status code of 204
 <h3>Reading an engine configuration</h3>  
 Like report configurations, there is a corresponding **Engine Configuration View** object, which contains the same fields as the Engine Configuration Update object, but also includes a "status" field that has one of the 4 string values from the section describing Report Configuration View objects.  
 
-<h3>Usage example</h3>  
+### Usage example  
 If we have installed our transponder in a Ford Mustang with a 5.0 liter engine, we would create the following engine configuration:  
 
-HTTP request  
+##### HTTP request  
 ```javascript
 PUT https://api.carmalink.com:8282/v1/159821/config/engine
 {
@@ -31,12 +31,12 @@ PUT https://api.carmalink.com:8282/v1/159821/config/engine
 ```  
 
 To read back this configuration:  
-HTTP request
+##### HTTP request
 ```javascript
 GET https://api.carmalink.com:8282/v1/159821/config/engine
 ```  
 
-HTTP response
+##### HTTP response
 ```javascript
 {
   "fuel" : "FUEL_GASOLINE",
