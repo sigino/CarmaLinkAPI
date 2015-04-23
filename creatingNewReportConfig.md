@@ -16,12 +16,12 @@ Not all reports support all fields and some have restrictions regarding the requ
 <sub>Hard Cornering</sub> | <sub>`/hard_cornering`</sub> | <sub>optional, defaults to 0</sub> | <sub>required, units of meters/sec^2, must be > 0</sub> | <sub>optional, defaults to false</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported</sub>  
 <sub>Status</sub> | <sub>`/status`</sub> | <sub>optional, defaults to 0</sub> | <sub>required, identifies send interval in msec, must be ≥ 5000</sub> | <sub>optional, defaults to false</sub> | <sub>ignored</sub> | <sub>optional</sub> | <sub>not supported</sub>  
 <sub>Idling</sub> | <sub>`/idling`</sub> | <sub>required, ≥ 5000</sub> | <sub>ignored</sub> | <sub>optional, defaults to false</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported</sub>  
-Overspeeding | `/overspeeding` | optional, defaults to 0 | required, units of km/hr, must be ≥ 50 | optional, defaults to false | optional | optional | not supported  
-Parking | `/parking` | = 0 | required, identifies send interval in msec, must be ≥ 1800000 | optional, defaults to false | ignored | optional | not supported  
-Seatbelt Unbuckled | `/seatbelt` | optional, defaults to 0 | Identifies minimum vehicle speed, must be > 0 | optional, defaults to false | optional | optional | not supported  
-Transported | `/transported` | optional, defaults to 0 | required, identifies send interval in msec, must be ≥ 30000 | optional, defaults to false | ignored | optional | not supported  
-Trip Summary | `/trip_report` | optional, defaults to 0 | ignored | optional, defaults to false | ignored | optional | optional | not supported  
-Vehicle Health | `/vehicle_health` | = 0 | ignored | optional, defaults to false | ignored | optional | optional  
+<sub>Overspeeding</sub> | <sub>`/overspeeding`</sub> | <sub>optional, defaults to 0</sub> | <sub>required, units of km/hr, must be ≥ 50</sub> | <sub>optional, defaults to false</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported</sub>  
+<sub>Parking</sub> | <sub>`/parking`</sub> | <sub>= 0</sub> | <sub>required, identifies send interval in msec, must be ≥ 1800000</sub> | <sub>optional, defaults to false</sub> | <sub>ignored</sub> | <sub>optional</sub> | <sub>not supported</sub>  
+<sub>Seatbelt Unbuckled</sub> | <sub>`/seatbelt`</sub> | <sub>optional, defaults to 0</sub> | <sub>Identifies minimum vehicle speed, must be > 0</sub> | <sub>optional, defaults to false</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported</sub>  
+<sub>Transported</sub> | `/transported` | <sub>optional, defaults to 0</sub> | <sub>required, identifies send interval in msec, must be ≥ 30000</sub> | <sub>optional, defaults to false</sub> | <sub>ignored</sub> | <sub>optional</sub> | <sub>not supported</sub>  
+<sub>Trip Summary</sub> | `/trip_report` | <sub>optional, defaults to 0</sub> | <sub>ignored</sub> | <sub>optional, defaults to false</sub> | <sub>ignored</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported</sub>  
+<sub>Vehicle Health</sub> | `/vehicle_health` | <sub>= 0</sub> | <sub>ignored</sub> | <sub>optional, defaults to false</sub> | <sub>ignored</sub> | <sub>optional</sub> | <sub>optional</sub>  
 
 
 --
