@@ -50,3 +50,6 @@
 * Added 'gpsTimestamp' to the location object  
 * Deprecated 'All Activity' and 'Parking Brake' reports  
 * Changed engine configuration URI  
+ 
+
+[:fast_forward: Next Section: 6. Referenced documents & standards](/6referencedDocStand.md)
