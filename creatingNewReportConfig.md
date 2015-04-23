@@ -8,10 +8,10 @@ Not all reports support all fields and some have restrictions regarding the requ
 > All report configuration URIs are relative to /report_config  
 > The success code is 204 (No Content)  
 
-<sub>Report | URI | Allowance | Threshold | Location | Buzzer | Optional Parameters | Optional Conditions
+<sub>Report</sub> | <sub>URI</sub> | <sub>Allowance</sub> | <sub>Threshold</sub> | <sub>Location</sub> | <sub>Buzzer</sub> | <sub>Optional Parameters</sub> | <sub>Optional Conditions</sub>
 -------|-----|-----------|-----------|----------|--------|---------------------|---------------------
-Engine Overspeed | `/engine_overspeed` | optional, defaults to 0 | required, units of RPM, must be > 0 | optional, defaults to false | optional | optional | not supported  
-Hard Acceleration | `/hard_accel` | optional, defaults to 0 | required, units of meters/sec^2, must be > 0 | optional, defaults to false | optional | optional | not supported   
+<sub>Engine Overspeed</sub> | <sub>`/engine_overspeed`</sub> | <sub>optional, defaults to 0</sub> | <sub>required, units of RPM, must be > 0</sub> | optional, defaults to false</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported  
+Hard Acceleration</sub> | <sub>`/hard_accel`</sub> | <sub>optional, defaults to 0</sub> | <sub>required, units of meters/sec^2, must be > 0</sub> | optional, defaults to false | optional | optional | not supported   
 Hard Braking | `/hard_braking` | optional, defaults to 0 | required, units of meters/sec^2, must be < 0 | optional, defaults to false | optional | optional | not supported  
 Hard Cornering | `/hard_cornering` | optional, defaults to 0 | required, units of meters/sec^2, must be > 0 | optional, defaults to false | optional | optional | not supported  
 Status | `/status` | optional, defaults to 0 | required, identifies send interval in msec, must be ≥ 5000 | optional, defaults to false | ignored | optional | not supported  
@@ -21,7 +21,7 @@ Parking | `/parking` | = 0 | required, identifies send interval in msec, must be
 Seatbelt Unbuckled | `/seatbelt` | optional, defaults to 0 | Identifies minimum vehicle speed, must be > 0 | optional, defaults to false | optional | optional | not supported  
 Transported | `/transported` | optional, defaults to 0 | required, identifies send interval in msec, must be ≥ 30000 | optional, defaults to false | ignored | optional | not supported  
 Trip Summary | `/trip_report` | optional, defaults to 0 | ignored | optional, defaults to false | ignored | optional | optional | not supported  
-Vehicle Health | `/vehicle_health` | = 0 | ignored | optional, defaults to false | ignored | optional | optional</sub>  
+Vehicle Health | `/vehicle_health` | = 0 | ignored | optional, defaults to false | ignored | optional | optional  
 
 
 --
