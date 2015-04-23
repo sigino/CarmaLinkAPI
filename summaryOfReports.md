@@ -23,4 +23,6 @@ All URIs mentioned in this document are relative to `https://api.carmalink.com:8
 
 All data exchanged in the API is formatted in JSON: any HTTP request or response containing a body should have the Content-Type: application/json header.  
 
-All requests require an Authorization header with a valid signature in order to be processed. Skip ahead to chapter 4 for more information.
+All requests require an Authorization header with a valid signature in order to be processed. Skip ahead to chapter 4 for more information.  
+
+[:fast_forward: Next Section: Summary of Reports](/2configuration.md)
