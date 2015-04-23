@@ -3,3 +3,4 @@ A new transponder is a bit of a blank slate: by default it only has one hard-cod
 
 Once the transponder receives a configuration from the server it is stored in non-volatile memory so that this information is not lost between reset or power cycles.  
 
+[:fast_forward: Next Section: Defining a report configuration](/definingReportConfig.md)
