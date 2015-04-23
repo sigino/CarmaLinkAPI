@@ -1,7 +1,7 @@
-<h2>Configuring multiple transponders</h2>  
+## Configuring multiple transponders  
 Our examples thus far have been focused on configuring one transponder per HTTP request. If you have a number of transponders with different configurations, this is the best way to manage them. However, many times you may want to assign the same configuration to many (or all) transponders on your API account. The API provides a means of accomplishing this through a modified request URI and response format.  
 
-<h3>Changes to the request</h3>  
+### Changes to the request  
 A set of transponders can be configured in a single HTTP request by adding the serial number of each to the <serial> part of the URI using special operators:  
 
 * Use a dot operation (".") to append another serial number  
@@ -38,7 +38,7 @@ For any failed request, each serial number will have an object that contains an 
 The following example configures serial numbers 8, 18, 19, 20, and 25 with the same Overspeeding configuration we have previously used.  
  
 --
-HTTP request
+##### HTTP request
 ```javascript
 PUT https://api.carmalink.com:8282/v1/8.18-20.25/report_config/overspeeding
 {
@@ -50,7 +50,7 @@ PUT https://api.carmalink.com:8282/v1/8.18-20.25/report_config/overspeeding
 }
 ```  
 --
-HTTP response  
+##### HTTP response  
 ```javascript
 {
   "data" : {
@@ -80,12 +80,12 @@ HTTP response
 ```  
 --  
 Reading back this same configuration:  
-HTTP request  
+##### HTTP request  
 ```javescript
 GET https://api.carmalink.com:8282/v1/8.18-20.25/report_config/overspeeding  
 ```  
 --  
-HTTP response  
+##### HTTP response  
 ```javascript
 {
   "data" : {
