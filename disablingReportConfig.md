@@ -3,4 +3,6 @@ Any report you don't want the transponder to run anymore can be deactivated usin
 
 Contrary to the standard implications of this method, it does not actually delete any data on the server. Instead, on a read-back of the report's configuration, you will see the status change to 'PENDING_DEACTIVATION', and then 'DEACTIVATED' when the transponder receives the request. Deactivating a report will also automatically disable the buzzer for that report.  
 
-If you just want to disable the buzzer for the configuration, see Buzzer Configuration.
+If you just want to disable the buzzer for the configuration, see Buzzer Configuration.  
+
+[:fast_forward: Next Section: Changing an existing report configuration](/changingExistingConfig.md)
