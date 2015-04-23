@@ -8,7 +8,7 @@ Not all reports support all fields and some have restrictions regarding the requ
 > All report configuration URIs are relative to /report_config  
 > The success code is 204 (No Content)  
 
-Report | URI | Allowance | Threshold | Location | Buzzer | Optional Parameters | Optional Conditions
+<sub>Report | URI | Allowance | Threshold | Location | Buzzer | Optional Parameters | Optional Conditions
 -------|-----|-----------|-----------|----------|--------|---------------------|---------------------
 Engine Overspeed | `/engine_overspeed` | optional, defaults to 0 | required, units of RPM, must be > 0 | optional, defaults to false | optional | optional | not supported  
 Hard Acceleration | `/hard_accel` | optional, defaults to 0 | required, units of meters/sec^2, must be > 0 | optional, defaults to false | optional | optional | not supported   
@@ -21,7 +21,7 @@ Parking | `/parking` | = 0 | required, identifies send interval in msec, must be
 Seatbelt Unbuckled | `/seatbelt` | optional, defaults to 0 | Identifies minimum vehicle speed, must be > 0 | optional, defaults to false | optional | optional | not supported  
 Transported | `/transported` | optional, defaults to 0 | required, identifies send interval in msec, must be ≥ 30000 | optional, defaults to false | ignored | optional | not supported  
 Trip Summary | `/trip_report` | optional, defaults to 0 | ignored | optional, defaults to false | ignored | optional | optional | not supported  
-Vehicle Health | `/vehicle_health` | = 0 | ignored | optional, defaults to false | ignored | optional | optional  
+Vehicle Health | `/vehicle_health` | = 0 | ignored | optional, defaults to false | ignored | optional | optional</sub>  
 
 
 --
