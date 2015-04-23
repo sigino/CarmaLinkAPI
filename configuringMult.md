@@ -87,7 +87,6 @@ GET https://api.carmalink.com:8282/v1/8.18-20.25/report_config/overspeeding
 --  
 HTTP response  
 ```javascript
-Content-Type: application/json
 {
   "data" : {
     "8": {
