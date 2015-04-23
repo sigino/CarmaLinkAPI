@@ -30,3 +30,5 @@ HTTP response body
 ```
 
 Note that the configuration ID is new.  
+
+[:fast_forward: Next Section: Examining inactive report configurations](/examiningInactive.md)
