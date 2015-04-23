@@ -38,7 +38,6 @@ GET https://api.carmalink.com:8282/v1/159821/config/engine
 
 HTTP response
 ```javascript
-PUT https://api.carmalink.com:8282/v1/159821/config/engine
 {
   "fuel" : "FUEL_GASOLINE",
   "displacement" : 5.0,
