@@ -39,3 +39,4 @@ PUT https://api.carmalink.com:8282/v1/159821/report_config/overspeeding
 }  
 ```
 
+[:fast_forward: Next Section: Reading a report configuration](/readingReportConfig.md)
