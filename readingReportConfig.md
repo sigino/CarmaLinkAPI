@@ -30,12 +30,12 @@ DEACTIVATED | Configuration is no longer being used by the transponder.
 ### Usage Example  
 To continue our last example, we will read back the Overspeeding configuration we recently created.  
 
-HTTP request:  
+##### HTTP request:  
 ```javascript
 GET https://api.carmalink.com:8282/v1/159821/report_config/overspeeding  
 ```
 
-HTTP response body:  
+##### HTTP response body:  
 ```javascript  
 {  
   "configId" : 397746,  
