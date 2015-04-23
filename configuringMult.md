@@ -141,4 +141,4 @@ Content-Type: application/json
 ```  
 --  
 
-[:fast_forward: Next Section: 3. Report Data](/3reportData.md)
+[:fast_forward: Next Section: 3. Report data](/3reportData.md)
