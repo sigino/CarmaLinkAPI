@@ -70,7 +70,7 @@ result = client.access_resource(oauth_request)
 print 'response: %s' % str(result)  
 ```
 --
-#### PHP Example  
+##### PHP Example  
 ```php
 <?php
 define('CONSUMER_KEY','JiYmll7CX3AXDgasnnIDeg');
