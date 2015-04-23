@@ -27,7 +27,7 @@ ACTIVATED | Configuration has been sent down to the transponder and is now being
 PENDING_DEACTIVATION | A request to disable this configuration has been received by the server, but has not yet been sent down to the transponder.  
 DEACTIVATED | Configuration is no longer being used by the transponder.  
 
-Usage Example  
+<b>Usage Example</b>  
 To continue our last example, we will read back the Overspeeding configuration we recently created.  
 
 HTTP request:  
