@@ -16,7 +16,7 @@ The rest of the request looks the same as if you were addressing a single transp
 
 Behind the scenes, the API actually makes individual requests for each serial number listed and then collates the results into a single object that is returned in the HTTP response body.  
   
-<h3>Changes to the response</h3>
+### Changes to the response  
 The response from the server will include a **Multiple Query Response** object in JSON format that contains the following fields:  
 
 Field | JSON name | Value | Description
@@ -26,12 +26,12 @@ Error | error | List of objects | This field contains the status code and error 
 
 For each serial number in the request URI there will be a correspondingly named object that exists either in the Data (on success) or Error (on failure) objects.  
 
-<b>On success</b>
+##### On success  
 For PUT and DELETE requests that are successful, each serial number will have an object that contains a "success" field with a value of "true", and a "code" field with an integer value of 204.  
 
 For GET requests that are successful, each serial number will have its own Report Configuration View object.  
 
-<b>On failure</b>
+##### On failure  
 For any failed request, each serial number will have an object that contains an "error" field with a string describing the error, and a "code" field with an integer value of the HTTP status code.  
 
 ### Usage example  
