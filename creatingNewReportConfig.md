@@ -10,11 +10,11 @@ Not all reports support all fields and some have restrictions regarding the requ
 
 <sub>Report</sub> | <sub>URI</sub> | <sub>Allowance</sub> | <sub>Threshold</sub> | <sub>Location</sub> | <sub>Buzzer</sub> | <sub>Optional Parameters</sub> | <sub>Optional Conditions</sub>
 -------|-----|-----------|-----------|----------|--------|---------------------|---------------------
-<sub>Engine Overspeed</sub> | <sub>`/engine_overspeed`</sub> | <sub>optional, defaults to 0</sub> | <sub>required, units of RPM, must be > 0</sub> | optional, defaults to false</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported  
-Hard Acceleration</sub> | <sub>`/hard_accel`</sub> | <sub>optional, defaults to 0</sub> | <sub>required, units of meters/sec^2, must be > 0</sub> | optional, defaults to false | optional | optional | not supported   
-Hard Braking | `/hard_braking` | optional, defaults to 0 | required, units of meters/sec^2, must be < 0 | optional, defaults to false | optional | optional | not supported  
-Hard Cornering | `/hard_cornering` | optional, defaults to 0 | required, units of meters/sec^2, must be > 0 | optional, defaults to false | optional | optional | not supported  
-Status | `/status` | optional, defaults to 0 | required, identifies send interval in msec, must be ≥ 5000 | optional, defaults to false | ignored | optional | not supported  
+<sub>Engine Overspeed</sub> | <sub>`/engine_overspeed`</sub> | <sub>optional, defaults to 0</sub> | <sub>required, units of RPM, must be > 0</sub> | <sub>optional, defaults to false</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported</sub>  
+Hard Acceleration</sub> | <sub>`/hard_accel`</sub> | <sub>optional, defaults to 0</sub> | <sub>required, units of meters/sec^2, must be > 0</sub> | <sub>optional, defaults to false</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported</sub>   
+<sub>Hard Braking</sub> | <sub>`/hard_braking`</sub> | <sub>optional, defaults to 0</sub> | <sub>required, units of meters/sec^2, must be < 0</sub> | <sub>optional, defaults to false</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported</sub>  
+<sub>Hard Cornering</sub> | <sub>`/hard_cornering`</sub> | <sub>optional, defaults to 0</sub> | <sub>required, units of meters/sec^2, must be > 0</sub> | <sub>optional, defaults to false</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported</sub>  
+Status | <sub>`/status` | <sub>optional, defaults to 0 | <sub>required, identifies send interval in msec, must be ≥ 5000 | <sub>optional, defaults to false | <sub>ignored | <sub>optional | <sub>not supported  
 Idling | `/idling` | required, ≥ 5000 | ignored | optional, defaults to false | optional | optional | not supported  
 Overspeeding | `/overspeeding` | optional, defaults to 0 | required, units of km/hr, must be ≥ 50 | optional, defaults to false | optional | optional | not supported  
 Parking | `/parking` | = 0 | required, identifies send interval in msec, must be ≥ 1800000 | optional, defaults to false | ignored | optional | not supported  
