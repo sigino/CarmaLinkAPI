@@ -20,4 +20,6 @@ HTTP response body
   "buzzer" : "HIGH",
   "optionalParams" : [ "BATTERY_VOLTAGE", "ODOMETER" ]
 }
-```
+```  
+
+[:fast_forward: Next Section: Buzzer configuration](/buzzerConfig.md)
