@@ -10,12 +10,12 @@ API users are assigned an apiKey and secretKey pair, allowing access to their ra
 We suggest obtaining a good OAuth 1.0a library for the development environment you plan to use. The official OAuth site maintains a repository of libraries for various languages along with a general listing of external open source initiatives. You will need to make sure that the library you choose supports the OAuth 1.0a two-legged approach and the GET/PUT/DELETE HTTP verbs as well as sending and receiving JSON-encoded content.  
 Since the API only uses two-legged authentication, there is no need for any kind of access or request tokens from the server. You will simply need to properly sign the request by including the "Authorization:" HTTP 1.1 header. Here is a sample of what that header should look like when sent:  
 
-HTTP 1.1 Header  
+##### HTTP 1.1 Header  
 ```javascript  
 Authorization: OAuth oauth_consumer_key="JiYm4l74tXddzz4snnIDeg",oauth_nonce="976cd77d0b33b524417f9f44884b7f00",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1348260490",oauth_version="1.0",oauth_signature="XG%2FBcoKd0S2eNUNeJCCof%2BI8bxI%3D"  
 ```
 --  
-Ruby Example  
+##### Ruby Example  
 ```ruby  
 #!/usr/bin/env ruby -rubygems
 # gem install oauth
@@ -29,7 +29,7 @@ response = consumer.request(:get,'https://api.carmalink.com:8282/v1/204/data/tri
 print response.body  
 ```
 --
-Python Example  
+##### Python Example  
 ```python  
 # Utilizes Leah Culver's OAuth library
 # http://oauth.googlecode.com/svn/code/python/
