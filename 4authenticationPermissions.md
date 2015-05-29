@@ -1,7 +1,7 @@
 ## 4. Authentication & permissions  
 
 ### Authentication  
-OAuth is the method used for parties to verify each other's identity. The OAuth 1.0a specification can be found at http://tools.ietf.org/html/rfc5849.  
+OAuth is the method used for parties to verify each other's identity. The OAuth 1.0a specification can be found at [RFC 5849](http://tools.ietf.org/html/rfc5849).  
 
 ### Permissions  
 API users are assigned an apiKey and secretKey pair, allowing access to their range of the transponder uniquely assigned serial numbers. Note: a transponder is owned by one user that is accessible with one api/secret key pair, and an API request made referencing a serial number not belonging to the user results in an error code being returned.
