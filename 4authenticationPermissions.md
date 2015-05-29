@@ -1,14 +1,14 @@
 ## 4. Authentication & permissions  
 
 ### Authentication  
-Two legged OAuth is the method used for parties to verify each other's identity. The OAuth 1.0a specification can be found at http://tools.ietf.org/html/rfc5849.  
+OAuth is the method used for parties to verify each other's identity. The OAuth 1.0a specification can be found at http://tools.ietf.org/html/rfc5849.  
 
 ### Permissions  
 API users are assigned an apiKey and secretKey pair, allowing access to their range of the transponder uniquely assigned serial numbers. Note: a transponder is owned by one user that is accessible with one api/secret key pair, and an API request made referencing a serial number not belonging to the user results in an error code being returned.
 
 ### OAuth 1.0a  
-We suggest obtaining a good OAuth 1.0a library for the development environment you plan to use. The official OAuth site maintains a repository of libraries for various languages along with a general listing of external open source initiatives. You will need to make sure that the library you choose supports the OAuth 1.0a two-legged approach and the GET/PUT/DELETE HTTP verbs as well as sending and receiving JSON-encoded content.  
-Since the API only uses two-legged authentication, there is no need for any kind of access or request tokens from the server. You will simply need to properly sign the request by including the "Authorization:" HTTP 1.1 header. Here is a sample of what that header should look like when sent:  
+We suggest obtaining a good OAuth 1.0a library for the development environment you plan to use. The official OAuth site maintains a repository of libraries for various languages along with a general listing of external open source initiatives. You will need to make sure that the library you choose supports OAuth 1.0a and the GET/PUT/DELETE HTTP verbs as well as sending and receiving JSON-encoded content.  
+Since the API only uses 'no-legged' authentication there is no need for any kind of access or request tokens from the server. You will simply need to properly sign the request by including the "Authorization:" HTTP 1.1 header. Here is a sample of what that header should look like when sent:  
 
 ##### HTTP 1.1 Header  
 ```javascript  
