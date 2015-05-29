@@ -8,7 +8,8 @@ API users are assigned an apiKey and secretKey pair, allowing access to their ra
 
 ### OAuth 1.0a  
 We suggest obtaining a good OAuth 1.0a library for the development environment you plan to use. The official OAuth site maintains a repository of libraries for various languages along with a general listing of external open source initiatives. You will need to make sure that the library you choose supports OAuth 1.0a and the GET/PUT/DELETE HTTP verbs as well as sending and receiving JSON-encoded content.  
-Since the API only uses 'no-legged' authentication there is no need for any kind of access or request tokens from the server. You will simply need to properly sign the request by including the "Authorization:" HTTP 1.1 header. Here is a sample of what that header should look like when sent:  
+
+The API does not use two or three legged authentication, so there is no need for any kind of access or request tokens from the server. You will simply need to properly sign the request by including the "Authorization:" HTTP 1.1 header. Here is a sample of what that header should look like when sent:  
 
 ##### HTTP 1.1 Header  
 ```javascript  
