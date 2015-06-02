@@ -30,7 +30,7 @@ response = consumer.request(:get,'https://api.carmalink.com:8282/v1/204/data/tri
 print response.body  
 ```
 --
-##### Python 2.X and  Example  
+##### Python 2.X and Python 3.X Example  
 ```python  
 # Utilizes Requests, an Apache2 Licensed HTTP library for python
 # http://docs.python-requests.org
