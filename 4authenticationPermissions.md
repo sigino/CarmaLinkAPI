@@ -30,45 +30,56 @@ response = consumer.request(:get,'https://api.carmalink.com:8282/v1/204/data/tri
 print response.body  
 ```
 --
-##### Python Example  
+##### Python 2.X and  Example  
 ```python  
-# Utilizes Leah Culver's OAuth library
-# http://oauth.googlecode.com/svn/code/python/
-# to install: $ easy_install oauth
- 
-import httplib
-import oauth.oauth as oauth
- 
-CONSUMER_KEY = 'JiYmll7CX3AXDgasnnIDeg'
-CONSUMER_SECRET = 'mWPBRK5kG2Tkthuf5zRV1jYWOEwnjI6xs3QVRqOOg'
+# Utilizes Requests, an Apache2 Licensed HTTP library for python
+# http://docs.python-requests.org
+
+# to install for python 3:
+# $ pip3 install requests
+# $ pip3 install requests_oauthlib
+
+# to instal for python 2.X:
+# $ pip install requests
+# $ pip install requests_oauthlib
+
+# if you are using a version of python earlier than python 2.7.9,
+# or receive an InsecurePlatformWarning, you will require the following :
+
+# $ pip install pyopenssl ndg-httpsclient pyasn1
+#import urllib3.contrib.pyopenssl
+#urllib3.contrib.pyopenssl.inject_into_urllib3()
+
+# End of python < v2.7.9 only
+
+import requests
+from requests_oauthlib import OAuth1
+
+  #url information...
 HOST = 'api.carmalink.com'
 PORT = 8282
+SERIAL_NUMBER = 204
+RESOURCE_PATH = '/v1/%i/report_config/trip_report' %(SERIAL_NUMBER)
 PROTOCOL = 'https://'
-RESOURCE_PATH = '/v1/204/data/trip_report'
-NULL_TOKEN = None
-RESOURCE_URL = PROTOCOL + HOST + ':' + str(PORT) + RESOURCE_PATH
- 
-# example client using httplib with headers
-class SimpleOAuthClient(oauth.OAuthClient):
-    def __init__(self, server, port=httplib.HTTP_PORT):
-        self.server = server
-        self.port = port
-        self.connection = httplib.HTTPSConnection("%s:%d" % (self.server, self.port))
-    def access_resource(self, oauth_request):
-        print 'OAuth Header : %s' % str(oauth_request.to_header())
-        self.connection.request('GET',RESOURCE_PATH,headers=oauth_request.to_header())
-        response = self.connection.getresponse()
-        return response.read()
- 
- 
-client = SimpleOAuthClient(HOST, PORT)
-consumer = oauth.OAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET)
-signature_method_hmac_sha1 = oauth.OAuthSignatureMethod_HMAC_SHA1()
-oauth_request = oauth.OAuthRequest.from_consumer_and_token(consumer, token=NULL_TOKEN, http_method='GET', http_url=RESOURCE_URL)
-oauth_request.sign_request(signature_method_hmac_sha1, consumer, NULL_TOKEN)
-result = client.access_resource(oauth_request)
- 
-print 'response: %s' % str(result)  
+
+  #oauth tokens
+CONSUMER_KEY = 'JiYmll7CX3AXDgasnnIDeg'
+CONSUMER_SECRET = 'mWPBRK5kG2Tkthuf5zRV1jYWOEwnjI6xs3QVRqOOg'
+  #We do not require these, as it is a 0 legged approach
+USER_OAUTH_TOKEN = None
+USER_OAUTH_TOKEN_SECRET = None
+
+  #form url
+url = "%s%s%s%s" %(PROTOCOL, HOST, (":%i" % PORT if not(PORT is None) else ""), RESOURCE_PATH)
+
+  #generate auth token for requests
+oauth_auth = OAuth1(CONSUMER_KEY, CONSUMER_SECRET)
+
+result = requests.get(url, auth = oauth_auth)
+
+print result.status_code
+print result.text
+object = result.json()  
 ```
 --
 ##### PHP Example  
