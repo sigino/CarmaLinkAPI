@@ -1,5 +1,5 @@
 <h2>Summary of reports</h2>  
-The following table provides a description of what types of vehicle operation the transponder can be configured to detect.  
+The following table provides a description of what types of events the transponder can be configured to detect.  
 
 Report Name | Trigger (Activation Condition)
 ------------|--------
@@ -8,7 +8,7 @@ Hard Acceleration | Vehicle acceleration exceeds specified threshold.
 Hard Braking | Vehicle deceleration exceeds specified threshold.  
 Hard Cornering | Vehicle lateral acceleration exceeds specified threshold.  
 Idling | Vehicle engine is on, but the speed is zero.  
-New Deployment | CarmaLink is plugged into a vehicle. This report is always active, and not configurable.  
+New Deployment | The transponder is plugged into a vehicle. This report is always active, and not configurable.  
 Overspeeding | Vehicle speed exceeds specified threshold.  
 Parking | Occurs on a periodic basis while the vehicle is off.  
 Seatbelt Unbuckled | Vehicle speed exceeds specified threshold while driver's seatbelt is unbuckled.  
@@ -23,6 +23,6 @@ All URIs mentioned in this document are relative to `https://api.carmalink.com:8
 
 All data exchanged in the API is formatted in JSON: any HTTP request or response containing a body should have the Content-Type: application/json header.  
 
-All requests require an Authorization header with a valid signature in order to be processed. Skip ahead to chapter 4 for more information.  
+All requests require an Authorization header with a valid signature in order to be processed. Skip ahead to chapter 5 for more information.  
 
 [:fast_forward: Next Section: 2. Configuration](/2configuration.md)
