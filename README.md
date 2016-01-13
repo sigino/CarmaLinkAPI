@@ -18,7 +18,7 @@ Welcome to the CarmaLink.API documentation.
 [Engine configuration](/engineConfig.md)  
 [Configuring multiple transponders](/configuringMult.md)  
 
-3. Report generation  
+[3. Report generation]()  
 
 [4. Report data](/3reportData.md)    
 [Report data structure](/reportDataStructure.md)  
