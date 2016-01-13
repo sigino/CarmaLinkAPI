@@ -18,7 +18,7 @@ Optional Conditions | optionalConditions | List of strings; see Optional Conditi
 
 --
 <h2>Optional Parameters</h2>  
-The Optional Parameters field identifies 'extra' information that should be present in reports generated from this configuration. Current optional parameters include:  
+The Optional Parameters field identifies `'extra'` information that should be present in reports generated from this configuration. Current optional parameters include:  
 
 optionalParam value | Notes
 --------------------|-------
@@ -33,7 +33,7 @@ IS_LOW_BATTERY_VOLTAGE | Available on all vehicles.
 IS_LOW_TIRE_PRESSURE | From the instrument cluster; only available on select vehicles that support this parameter.  
 
 <h2>Optional Conditions</h2>  
-The Optional Conditions field identifies `'extra'` conditions that can cause a report to be generated. Specifically, a report is created anytime a given condition changes values. Presently, only the `'Vehicle Health'` report is allowed to use of these optional conditions.  
+The Optional Conditions field identifies `'extra'` conditions that can cause a report to be generated. Specifically, a report is created anytime a given condition changes values. Presently, only the `'Vehicle Health'` report is allowed to use optional conditions.  
 
 <h3>optionalCondition value:</h3>  
 EMISSION_MONITORS  
