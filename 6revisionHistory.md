@@ -1,6 +1,6 @@
 ## 6. Revision History  
 
-### Summary of changes since v1.1  
+### Summary of changes since v1.1 
 * Changed /device_status to /status in URLs.  
 * Removed /devices/ from all URLs as it's unnecessary.  
 * Updated document for consistency, all urls in examples pointing towards https://api.carmalink.com:8282  
@@ -24,7 +24,7 @@
 * Expanded duration/distance to service support for Mini vehicles  
 * Deprecated Engine Fault report  
 
-### Summary of changes since v1.4  
+### Summary of changes since [v1.4](https://github.com/CarmaSys/CarmaLinkAPI/tree/1.4") 
 * Expanded support for optional parameters to all reports except New Deployment  
 * Added description of new "optionalParams" object  
 * Removed odometer, duration to service, and distance to service as possible fields in trip report: these are now in the "optionalParams" object  
