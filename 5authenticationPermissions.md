@@ -87,4 +87,5 @@ $response = $oauth->getLastResponse();
 print_r($response);
 ```  
 
-[:fast_forward: Next Section: 6. Revision History](/6revisionHistory.md)
+--
+[:fast_forward: Next Section: **6. Revision History**](/6revisionHistory.md)
