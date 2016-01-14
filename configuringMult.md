@@ -140,4 +140,4 @@ GET https://api.carmalink.com:8282/v1/8.18-20.25/report_config/overspeeding
 ```  
 --  
 
-[:fast_forward: Next Section: 3. Report generation](/)
+[:fast_forward: Next Section: 3. Report generation](/3reportGeneration.md)
