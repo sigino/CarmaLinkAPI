@@ -17,7 +17,7 @@ The rest of the request looks the same as if you were addressing a single transp
 Behind the scenes, the API actually makes individual requests for each serial number listed and then collates the results into a single object that is returned in the HTTP response body.  
   
 ### Changes to the response  
-The response from the server will include a **Multiple Query Response** object in JSON format that contains the following fields:  
+The response from the server will include a **Multiple Query Response object** in JSON format that contains the following fields:  
 
 Field | JSON name | Value | Description
 ------|-----------|-------|-------------
@@ -140,4 +140,4 @@ GET https://api.carmalink.com:8282/v1/8.18-20.25/report_config/overspeeding
 ```  
 --  
 
-[:fast_forward: Next Section: 3. Report data](/3reportData.md)
+[:fast_forward: Next Section: 3. Report generation](/)
