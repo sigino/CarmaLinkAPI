@@ -28,7 +28,7 @@ Not all reports support all fields and some have restrictions regarding the requ
 <h3>Usage Example</h3>  
 In this example, we would like to configure transponder serial number 159821 to recognize an `'overspeeding'` event when the vehicle goes over 160kph (~99mph) for over 5 seconds, and we'd like the generated report to include location, an odometer reading, and the vehicle's battery voltage.  Also, the buzzer should sound an alert at high volume when this event is taking place to let the driver know they are going too fast.  
 
-!HTTP request
+HTTP request
 ```javascript
 PUT https://api.carmalink.com:8282/v1/159821/report_config/overspeeding  
 {  
