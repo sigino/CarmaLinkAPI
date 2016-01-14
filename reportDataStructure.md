@@ -60,7 +60,13 @@ As indicated in the report configuration section, values for these parameters wi
 
 Unlike the Location object, all values in the Optional Parameters Data object are collected within a second or two of the reportTimestamp time.
 
-### Other report data  
-In addition to this standard and optional data included in a Report Data object, some reports include additional data fields as standard. These fields will be mentioned in each report's respective section.  
+### Non-configurable parameter data  
+In addition to the optional/configurable data, the following fields will be included in all reports when available:  
+
+Field | JSON name | Value type | Units | Description  
+------|-----------|------------|-------|------------  
+Cellular signal strength | cellSignalStrength | Float | dBm | Received signal strength indication (RSSI) for the local cellular network.  
+
+Each type of report includes additional fields as standard, as will be described in the next section.  
 
 [:fast_forward: Next Section: Report types](/reportTypes.md)
