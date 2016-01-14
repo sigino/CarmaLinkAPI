@@ -24,7 +24,7 @@
 * Expanded duration/distance to service support for Mini vehicles  
 * Deprecated Engine Fault report  
 
-### Summary of changes since [v1.4](https://github.com/CarmaSys/CarmaLinkAPI/tree/1.4") 
+### Summary of changes since [v1.4](https://github.com/CarmaSys/CarmaLinkAPI/tree/1.4)  
 * Expanded support for optional parameters to all reports except New Deployment  
 * Added description of new "optionalParams" object  
 * Removed odometer, duration to service, and distance to service as possible fields in trip report: these are now in the "optionalParams" object  
@@ -32,7 +32,7 @@
 * Added support for emission monitor status as an optional parameter  
 * Added support for emission monitor status as an optional condition on the Vehicle Health Report  
 
-### Summary of changes since v1.5  
+### Summary of changes since [v1.5](https://github.com/CarmaSys/CarmaLinkAPI/tree/1.5)  
 * Added support for 'Is Low Battery Voltage' as an optional parameter  
 * Added support for 'Is Low Battery Voltage' as an optional condition on the 'Vehicle Health' report  
 * Added support for 'Is Low Tire Pressure' as an optional parameter  
@@ -44,14 +44,14 @@
 * Added 'Engine Overspeed' report  
 * Added 'Parking' report  
 
-### Summary of changes since v1.6  
+### Summary of changes since [v1.6](https://github.com/CarmaSys/CarmaLinkAPI/tree/1.6)  
 * Added support for 'FuelRate' as an optional parameter  
 * Added 'Transported' report  
 * Added 'gpsTimestamp' to the location object  
 * Deprecated 'All Activity' and 'Parking Brake' reports  
 * Changed engine configuration URI  
 
-### Summary of changes since v1.7  
+### Summary of changes since [v1.7](https://github.com/CarmaSys/CarmaLinkAPI/tree/1.7)  
 * Added "inProgress" and "cellSignalStrength" as standard parameters in all configurable reports; replaces "gsmSignalStrength" in the Status report  
 * Added "distance" and "fuelConsumed" to the Status report  
 * Parking reports are now sent on event start  
