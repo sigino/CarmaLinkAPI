@@ -98,6 +98,7 @@ Fuel consumed | fuelConsumed | Float | liters | Identifies how many liters of fu
 The Transported event starts when the vehicle begins moving while it is off, and ends when it stops moving or the vehicle switches on. This is useful to capture theft or tow events.  
 
 A report is generated on event start, periodically at the configured 'threshold' interval, and on event end. There are no additional standard parameters in this report.  
+
 --
 
 ### Trip Summary  
