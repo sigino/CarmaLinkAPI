@@ -12,7 +12,7 @@ Welcome to the CarmaLink.API documentation.
 [2. Configuration](/2configuration.md)  
 [Defining a report configuration](/definingReportConfig.md)  
 [Creating a new report configuration](/creatingNewReportConfig.md)  
-• [Reading a report configuration](/readingReportConfig.md)  
+[Reading a report configuration](/readingReportConfig.md)  
 [Disabling a report configuration](/disablingReportConfig.md)  
 [Changing an existing report configuration](/changingExistingConfig.md)  
 [Examining inactive report configurations](/examiningInactive.md)  
@@ -20,10 +20,10 @@ Welcome to the CarmaLink.API documentation.
 [Engine configuration](/engineConfig.md)  
 [Configuring multiple transponders](/configuringMult.md)  
 
-[3. Report generation]()  
+[3. Report generation](/3reportGeneration.md)  
 
-[4. Report data](/3reportData.md)    
-[Report data structure](/reportDataStructure.md)  
+[4. Report data](/4reportData.md)    
+• [Report data structure](/reportDataStructure.md)  
 [Report types](/reportTypes.md)  
 [Non-configurable reports](/nonConfigurable.md)  
 [Retrieving report data](/retrievingReportData.md)  
