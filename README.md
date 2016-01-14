@@ -30,7 +30,7 @@ Welcome to the CarmaLink.API documentation.
 
 [5. Authentication & permissions](/5authenticationPermissions.md)  
 
-[6. Revision History](/5revisionHistory.md)  
+[6. Revision History](/6revisionHistory.md)  
 Summary of changes since v1.1  
 Summary of changes since v1.2  
 Summary of changes since v1.3  
@@ -39,7 +39,7 @@ Summary of changes since v1.5
 Summary of changes since v1.6  
 Summary of changes since v1.7  
 
-[7. Referenced documents & standards](/6referencedDocStand.md)  
+[7. Referenced documents & standards](/7referencedDocStand.md)  
 
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.7">Version 1.7</a>  
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.6">Version 1.6</a>  
