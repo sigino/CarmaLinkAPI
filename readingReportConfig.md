@@ -46,6 +46,7 @@ GET https://api.carmalink.com:8282/v1/159821/report_config/overspeeding
   "buzzer" : "HIGH",  
   "optionalParams" : [ "BATTERY_VOLTAGE", "ODOMETER" ]  
 }   
-```  
+```
 
-[:fast_forward: Next Section: Disabling a report configuration](/disablingReportConfig.md)
+--
+[:fast_forward: Next Section: **Disabling a report configuration**](/disablingReportConfig.md)
