@@ -111,4 +111,4 @@ The previous example touches on how you would go about getting all data for a gi
 
 ![Diagram: Get report data](/getReportDataDiagram.png)
 
-[:fast_forward: Next Section: 4. Authentication & permissions](/4authenticationPermissions.md)
+[:fast_forward: Next Section: 5. Authentication & permissions](/5authenticationPermissions.md)
