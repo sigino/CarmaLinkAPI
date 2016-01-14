@@ -1,4 +1,4 @@
-## 4. Authentication & permissions  
+## 5. Authentication & permissions  
 
 ### Authentication  
 OAuth is the method used for parties to verify each other's identity. The OAuth 1.0a specification can be found at [RFC 5849](http://tools.ietf.org/html/rfc5849).  
@@ -98,4 +98,4 @@ $response = $oauth->getLastResponse();
 print_r($response);
 ```  
 
-[:fast_forward: Next Section: 5. Revision History](/5revisionHistory.md)
+[:fast_forward: Next Section: 6. Revision History](/6revisionHistory.md)
