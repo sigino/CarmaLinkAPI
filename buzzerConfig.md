@@ -16,4 +16,5 @@ Idling | Freefall down notes (5 sec gap)
 Overspeeding | High/low two note (5 sec gap)
 Seatbelt Unbuckled | High/low two note (3 sec gap)  
 
-[:fast_forward: Next Section: Engine configuration](/engineConfig.md)
+--
+[:fast_forward: Next Section: **Engine configuration**](/engineConfig.md)
