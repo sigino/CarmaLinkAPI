@@ -84,8 +84,6 @@ Maximum speed	| maxSpeed	| Float	| km/hr	| Identifies the maximum vehicle speed 
 --
 
 ### Status  
-The Status report is sent while the engine is running.  
-
 The Status event starts when the vehicle's combustion engine switches on (RPM > 0) or the vehicle begins moving under its own power (for hybrid or electric vehicles), and ends when combustion engine is off and the vehicle is not moving under its own power. This is the opposite of the Parking report, and at any given moment one of these events, either Status or Parking, will be true.  
 
 A report is generated at event start, periodically at the configured 'threshold' interval, and when the event ends.  Beyond the standard report parameters, the following fields are included in this type of report when available:  
