@@ -1,17 +1,27 @@
 ## Report data structure  
 All configurable reports produce Report Data objects in JSON format that contain the following standard fields:  
 
-Field | JSON Name | Value type | Notes
-------|-----------|------------|-------
-Serial Number | serial | Integer | Identifies the transponder's serial number.  
-Configuration ID | configId | Integer | References the specific configuration that caused this report to be generated.  
-Event start timestamp	| eventStart | Integer | Specifies the POSIX time in milliseconds when the report's trigger condition first became true (after any allowance).  
-Report timestamp | reportTimestamp | Integer | Specifies the POSIX time in milliseconds when the report was generated.  
-Duration | duration | Integer | The Report timestamp minus the event start timestamp.  
+Field | JSON Name | Value type | Units | Notes
+------|-----------|------------|-------|-------
+Serial Number | serial | Integer | - | Identifies the transponder's serial number.  
+Configuration ID | configId | Integer | - | References the specific configuration that caused this report to be generated.  
+Event start timestamp	| eventStart | Integer | milliseconds | The POSIX time when the report's trigger condition first became true (after any allowance).  
+Report timestamp | reportTimestamp | Integer | milliseconds | The POSIX time when the report was generated: all parameter values in the report are in reference to this value.  
+Duration | duration | Integer | milliseconds | The Report timestamp minus the event start timestamp.  
+In progress | inProgress | Boolean | true or false | Identifies whether the trigger condition is true or false at the time indicated by the reportTimestamp.  
 
-All of this information will always be in all reports, with the exception of the non-configurable New Deployment report.  
+This information will always be in all configurable reports.  
 
-In it's most basic form, a report will simply tell you when the trigger condition (as defined by the configuration) became true, and for how long. Depending on your configuration, the Report Data object may also include the Location object and/or the Optional Parameters object.  
+In its most basic form, a report will simply tell you when the trigger condition (as defined by the report's configuration) became true and whether the trigger condition is still true at the time the report was generated (reportTimestamp).  
+
+### Parametric data  
+The remainder of the report contains various standard and configurable parameter values, all of which were sampled at the time indicated by the reportTimestamp.  
+
+For each parameter mentioned in this section a data field **will only be included in the report if the information is available at the time the report is generated** (reportTimestamp).  
+
+### Configurable parameter data  
+Recall that a report's configuration identifies which optional data to add to the report. This section specifies the format of this data within the Report Data object.  
+
 
 ### Location Object  
 The Location object provides a kinematic snapshot of your vehicle in time and space. It provides the following fields:  
@@ -28,7 +38,7 @@ Timestamp | gpsTimestamp | Integer | Specifies the POSIX time in milliseconds wh
 If you set 'location' in your report configuration to 'true', then the transponder will try to include location information in your report. This information will be null (missing) in all reports until the transponder acquires a GPS lock.  
 
 **GPS Timestamp**  
-One special quality of the location object is that it includes its own timestamp. The transponder will update its location information as quickly as possible, and under favorable operating conditions that means that the 'gpsTimestamp' should be approximately equal to the 'reportTimestamp'. However, sometimes GPS lock can be lost, for example, when you enter a structure (tunnel, parking garage, etc). In this case, the transponder will always provide the **last known** location in the report data object: the freshness of this data will be indicated by the difference in time between the reportTimestamp and gpsTimestamp. Therefore, when examining report data it is important to see how recent the location information is with respect to the report timestamp.  
+One special quality of the location object is that it includes its own timestamp. The transponder will update its location information as quickly as possible, and under favorable operating conditions that means that the `'gpsTimestamp'` should be approximately equal to the `'reportTimestamp'`. However, sometimes GPS lock can be lost, for example, when you enter a structure (tunnel, parking garage, etc). In this case, the transponder will always provide the **last known** location in the report data object: the freshness of this data will be indicated by the difference in time between the reportTimestamp and gpsTimestamp. Therefore, when examining report data it is important to see how recent the location information is with respect to the report timestamp.  
 
 ### Optional Parameters Data Object  
 The Optional Parameters Data object includes any parameters specified in the report's configuration, and could include:  
