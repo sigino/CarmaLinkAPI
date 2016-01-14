@@ -5,14 +5,14 @@ Field | JSON Name | Value type | Units | Notes
 ------|-----------|------------|-------|-------
 Serial Number | serial | Integer | - | Identifies the transponder's serial number.  
 Configuration ID | configId | Integer | - | References the specific configuration that caused this report to be generated.  
-Event start timestamp	| eventStart | Integer | milliseconds | The POSIX time when the report's trigger condition first became true (after any allowance).  
+Event start timestamp	| eventStart | Integer | milliseconds | The POSIX time when the report's event first became true (after any allowance).  
 Report timestamp | reportTimestamp | Integer | milliseconds | The POSIX time when the report was generated: all parameter values in the report are in reference to this value.  
-Duration | duration | Integer | milliseconds | The Report timestamp minus the event start timestamp.  
-In progress | inProgress | Boolean | true or false | Identifies whether the trigger condition is true or false at the time indicated by the reportTimestamp.  
+Duration | duration | Integer | milliseconds | The Report timestamp minus the event start timestamp; the amount of time the event has been true.    
+In progress | inProgress | Boolean | true or false | Identifies whether the event is true or false at the time indicated by the reportTimestamp.  
 
 This information will always be in all configurable reports.  
 
-In its most basic form, a report will simply tell you when the trigger condition (as defined by the report's configuration) became true and whether the trigger condition is still true at the time the report was generated (reportTimestamp).  
+In its most basic form, a report will simply tell you when the event (as defined by the report's configuration) became true and whether the event is still true at the time the report was generated (reportTimestamp).  
 
 ### Parametric data  
 The remainder of the report contains various standard and configurable parameter values, all of which were sampled at the time indicated by the reportTimestamp.  
