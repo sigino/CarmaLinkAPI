@@ -123,4 +123,5 @@ Field | JSON name | Value type | Units | Description
 ------|-----------|------------|-------|------------
 Diagnostic trouble codes | dtcs | List of strings | -	| **For light-duty vehicles**, these are the SAE J1979 (OBD-II) trouble codes. **For heavy-duty vehicles**, these are the SAE J1939 FMI/SPN codes.  
 
-[:fast_forward: Next Section: Non-configurable reports](/nonConfigurable.md)
+--
+[:fast_forward: Next Section: **Non-configurable reports**](/nonConfigurable.md)
