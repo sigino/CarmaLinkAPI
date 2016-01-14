@@ -1,3 +1,5 @@
+*This branch is currently under construction*  
+
 Welcome to the CarmaLink.API documentation. 
 
 <h3>CarmaLink API version 1.8</h3>  
@@ -10,7 +12,7 @@ Welcome to the CarmaLink.API documentation.
 [2. Configuration](/2configuration.md)  
 [Defining a report configuration](/definingReportConfig.md)  
 [Creating a new report configuration](/creatingNewReportConfig.md)  
-[Reading a report configuration](/readingReportConfig.md)  
+> [Reading a report configuration](/readingReportConfig.md)  
 [Disabling a report configuration](/disablingReportConfig.md)  
 [Changing an existing report configuration](/changingExistingConfig.md)  
 [Examining inactive report configurations](/examiningInactive.md)  
