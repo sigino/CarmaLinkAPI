@@ -44,27 +44,19 @@ Maximum acceleration | maxAcceleration | Float | meters/sec^2 | Identifies the m
 
 --
 ### Idling  
-The Idling report identifies time and fuel used idling the engine.  
+The Idling event starts when the vehicle's engine is running (RPM > 0) and the speed is 0. The Idling event ends when the engine switches off, or if the speed is greater than 0.  
 
-<b>Dispatch</b>  
-This report is sent at the end of the idling event.  
+A report is generated at the end of the Idling event. Beyond the standard report parameters, the following fields are included in this type of report when available:  
 
-<b>Parameters</b>  
-Beyond the standard report parameters, the following fields are always included in this type of report:  
-
-Field | JSON name | Value type | Units 
-------|-----------|------------|-------
-Fuel consumed | fuelConsumed | Float | liters  
+Field | JSON name | Value type | Units | Description
+------|-----------|------------|-------|-----
+Fuel consumed | fuelConsumed | Float | liters | Identifies the amount of fuel used during the idle event.  
 --
 
 ### Overspeeding  
-The Overspeeding report captures instances when a vehicle's speed has exceeded a configured threshold.  
+The Overspeeding event starts when a vehicle's speed has exceeded the configured threshold, and ends when it falls below this threshold.  
 
-<b>Dispatch</b>  
-This report is sent when the vehicle speed has fallen below the configured threshold.  
-
-<b>Parameters</b>  
-Beyond the standard report parameters, the following fields are always included in this type of report:  
+A report is generated at the end of the Overspeeding event. Beyond the standard report parameters, the following fields are included in this type of report when available:  
 
 Field | JSON name | Value type | Units | Description
 ------|-----------|------------|-------|------------
@@ -72,28 +64,19 @@ Maximum speed |	maxSpeed	| Float | km/hr	| Identifies the maximum vehicle speed 
 --
 
 ### Parking  
-The Parking report is sent while the vehicle is off. This can serve as a useful 'ping' to identify battery voltage and that the device is still plugged in when parked for long periods.  
+The Parking event starts when the vehicle switches off, and ends when the vehicle switches on. This can serve as a useful 'ping' to identify battery voltage and that the transponder is still plugged in when parked for long periods.  
 
-<b>Dispatch</b>  
-This report is sent periodically while the vehicle's engine is off at an interval defined by this report's 'threshold', and once when the engine transitions from 'off' to 'on'.  
-
-<b>Parameters</b>  
-Beyond the standard report parameters, the following fields are always included in this type of report:  
+A report is generated at event start, periodically at the configured 'threshold' interval, and at event end. Beyond the standard report parameters, the following fields are included in this type of report when available:  
 
 Field | JSON name | Value type | Units | Description
 ------|-----------|------------|-------|------------
 Average battery voltage |	averageBatteryVoltage	| Float	| volts	| Identifies the average battery voltage since the engine switched off.
-In progress	| inProgress	| Boolean	| true or false	| Identifies if the engine is still off (true) or just switched from off to on (false) as of the reportTimestamp.  
 --
 
 ### Seatbelt Unbuckled  
-The Seatbelt Unbuckled report identifies when the driver's seatbelt is not fastened and the vehicle speed exceeds a configured threshold.  
+The Seatbelt Unbuckled event starts when the driver's seatbelt is not fastened AND the vehicle speed exceeds a configured threshold, and ends when the seatbelt is fastened OR the speed falls below the threshold.  
 
-<b>Dispatch</b>  
-This report is sent when the event is over: either the seatbelt is fastened, or the vehicle speed falls below the configured threshold.  
-
-<b>Parameters</b>  
-Beyond the standard report parameters, the following fields are always included in this type of report:  
+A report is generated at event end.  Beyond the standard report parameters, the following fields are included in this type of report when available:  
 
 Field | JSON name | Value type | Units | Description
 ------|-----------|------------|-------|------------
@@ -103,56 +86,38 @@ Maximum speed	| maxSpeed	| Float	| km/hr	| Identifies the maximum vehicle speed 
 ### Status  
 The Status report is sent while the engine is running.  
 
-<b>Dispatch</b>  
-This report is sent when the vehicle's engine transitions from 'off' to 'on', and periodically while the engine is running, at an interval defined by this report's 'threshold'.  
+The Status event starts when the vehicle's combustion engine switches on (RPM > 0) or the vehicle begins moving under its own power (for hybrid or electric vehicles), and ends when combustion engine is off and the vehicle is not moving under its own power. This is the opposite of the Parking report, and at any given moment one of these events, either Status or Parking, will be true.  
 
-<b>Parameters</b>  
-Beyond the standard report parameters, the following fields are always included in this type of report:  
+A report is generated at event start, periodically at the configured 'threshold' interval, and when the event ends.  Beyond the standard report parameters, the following fields are included in this type of report when available:  
 
 Field | JSON name | Value type | Units | Description
 ------|-----------|------------|-------|------------
-Cellular signal strength | gsmSignalStrength	| Float |	dBm	| Received signal strength indication (RSSI) for the local cellular network.  
+Distance | distance	| Float |	km	| Identifies how far the vehicle has traveled since the engine switched on.  
+Fuel consumed | fuelConsumed | Float | liters | Identifies how many liters of fuel the vehicle has consumed since the engine switched on.  
 --
 
 ### Transported  
-The Transported report captures vehicle movement when the engine is not running. For example, if the vehicle is stolen or being towed.  
+The Transported event starts when the vehicle begins moving while it is off, and ends when it stops moving or the vehicle switches on. This is useful to capture theft or tow events.  
 
-<b>Dispatch</b>  
-Reports are generated when the vehicle first begins moving, periodically at the configured interval, and finally once when the vehicle stops moving.  
-
-<b>Parameters</b>  
-Beyond the standard report parameters, the following fields are always included in this type of report:  
-
-Field | JSON name | Value type | Units | Description
-------|-----------|------------|-------|------------
-In progress |	inProgress | Boolean | true or false | Identifies if the vehicle is still moving (true) or just stopped moving (false) as of the reportTimestamp.
+A report is generated on event start, periodically at the configured 'threshold' interval, and on event end. There are no additional standard parameters in this report.  
 --
 
 ### Trip Summary  
-The Trip Summary report provides data calculated during the duration of a trip.  
+The Trip Summary event is the same as the Status event, but its reports contains some additional information.  
 
-<b>Dispatch</b>  
-Reports are generated when the trip starts (engine switches from 'off' to 'on') and when the trip stops (engine switches from 'on' to 'off').  
-
-<b>Parameters</b>  
-Beyond the standard report parameters, the following fields are always included in this type of report:  
+A report is generated on event start and event end. Beyond the standard report parameters, the following fields are included in this type of report when available:  
 
 Field | JSON name | Value type | Units | Description
 ------|-----------|------------|-------|------------
 Average battery voltage | averageBatteryVoltage | Float	| volts |	Identifies the average battery voltage since the engine switched on.
-Distance	| distance |	Float |	km |	Identifies how far the vehicle has traveled since the engine switched on.
-Fuel consumed |	fuelConsumed	| Float	| liters |	Identifies how many liters of fuel the vehicle has consumed since the engine switched on.
-In progress |	inProgress |	Boolean |	true or false |	Identifies if the engine is still running as of the reportTimestamp.  
+Distance	| distance | Float |	km |	Identifies how far the vehicle has traveled since the engine switched on.
+Fuel consumed |	fuelConsumed	| Float	| liters |	Identifies how many liters of fuel the vehicle has consumed since the engine switched on.  
 --
 
 ### Vehicle Health  
 The Vehicle Health report tracks problems with the engine, emissions system, tire pressure, and/or battery. Due to the unique way this report is processed, the duration value has no meaning.  
 
-<b>Dispatch</b>  
-Reports are generated whenever the number of diagnostic trouble codes (DTCs) changes, or the state of any of the optional conditions change.  
-
-<b>Parameters</b>  
-Beyond the standard report parameters, the following fields are always included in this type of report:  
+A report is generated whenever the vehicle diagnostic trouble codes (DTCs) change, or the state of any of the optional conditions change state. Beyond the standard report parameters, the following fields are included in this type of report when available:  
 
 Field | JSON name | Value type | Units | Description
 ------|-----------|------------|-------|------------
