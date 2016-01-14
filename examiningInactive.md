@@ -22,4 +22,5 @@ GET https://api.carmalink.com:8282/v1/159821/report_config/overspeeding?id=39774
 }
 ```  
 
-[:fast_forward: Next Section: Buzzer configuration](/buzzerConfig.md)
+--
+[:fast_forward: Next Section: **Buzzer configuration**](/buzzerConfig.md)
