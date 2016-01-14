@@ -29,6 +29,10 @@ On the subsequent GET, we would see something like the following response body:
 }
 ```
 
-Note that the configuration ID is new.  
+> :information_source:   
+>
+> Changing a report's configuration will cause a new configuration ID to be generated, except in cases where you are only updating the buzzer.  
+> If you try to change a report configuration that has never been set initially and you don't include a required field you will get an error.  
+
 
 [:fast_forward: Next Section: Examining inactive report configurations](/examiningInactive.md)
