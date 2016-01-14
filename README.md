@@ -1,5 +1,3 @@
-*This branch is currently under construction*  
-
 Welcome to the CarmaLink.API documentation. 
 
 <h3>CarmaLink API version 1.8</h3>  
