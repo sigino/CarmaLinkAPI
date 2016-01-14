@@ -24,4 +24,5 @@ Transported	| /transported | `List<Transported Report>`
 Trip Summary | /trip_report | `List<Trip Summary Report>`
 Vehicle Health | /vehicle_health | `List<Vehicle Health Report>`  
 
-[:fast_forward: Next Section: Report data structure](/reportDataStructure.md)
+--
+[:fast_forward: Next Section: **Report data structure**](/reportDataStructure.md)
