@@ -54,7 +54,7 @@
 ### Summary of changes since [v1.7](https://github.com/CarmaSys/CarmaLinkAPI/tree/1.7)  
 * Added "inProgress" and "cellSignalStrength" as standard parameters in all configurable reports; replaces "gsmSignalStrength" in the Status report  
 * Added "distance" and "fuelConsumed" to the Status report  
-* Parking reports are now generated on event start  
+* Parking reports are now also generated on event start  
 * Add "Report generation" section to clarify how/when reports are created  
  
 --
