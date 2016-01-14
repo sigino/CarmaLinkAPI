@@ -30,7 +30,7 @@ Welcome to the CarmaLink.API documentation.
 
 [6. Referenced documents & standards](/6referencedDocStand.md)  
 
-
+--
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.8">Version 1.8</a> 
 Version 1.7 
 <a href="https://github.com/CarmaSys/CarmaLinkAPI/tree/1.6">Version 1.6</a>  
