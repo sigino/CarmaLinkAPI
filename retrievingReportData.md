@@ -34,6 +34,8 @@ GET https://api.carmalink.com:8282/v1/159821/data/overspeeding?limit=2
   "eventStart" : 1424892534780,
   "reportTimestamp" : 1424892671547,
   "duration" : 136767,
+  "inProgress" : false,
+  "cellSignalStrength" : -79.0,
   "maxSpeed" : 167.83311,
   "location" : {
     "longitude" : -73.7484163,
@@ -53,6 +55,8 @@ GET https://api.carmalink.com:8282/v1/159821/data/overspeeding?limit=2
   "eventStart" : 1424891923207,
   "reportTimestamp" : 1424891981804,
   "duration" : 58597,
+  "inProgress" : false,
+  "cellSignalStrength" : -111.0,
   "maxSpeed" : 163.214,
   "location" : {
     "longitude" : -73.85483339999999,
@@ -83,6 +87,8 @@ GET https://api.carmalink.com:8282/v1/159821/data/overspeeding?limit=2&before=14
   "eventStart" : 1424891888496,
   "reportTimestamp" : 1424891902108,
   "duration" : 13612,
+  "inProgress" : false,
+  "cellSignalStrength" : -55.0,
   "maxSpeed" : 166.41976,
   "location" : {
     "longitude" : -73.8582004,
