@@ -20,14 +20,15 @@ Not all reports support all fields and some have restrictions regarding the requ
 <sub>Parking</sub> | `/parking` | <sub>= 0</sub> | <sub>required, identifies send interval in msec, must be ≥ 1800000</sub> | <sub>optional, defaults to false</sub> | <sub>ignored</sub> | <sub>optional</sub> | <sub>not supported</sub>  
 <sub>Seatbelt Unbuckled</sub> | `/seatbelt` | <sub>optional, defaults to 0</sub> | <sub>Identifies minimum vehicle speed, must be > 0</sub> | <sub>optional, defaults to false</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported</sub>  
 <sub>Transported</sub> | `/transported` | <sub>optional, defaults to 0</sub> | <sub>required, identifies send interval in msec, must be ≥ 30000</sub> | <sub>optional, defaults to false</sub> | <sub>ignored</sub> | <sub>optional</sub> | <sub>not supported</sub>  
-<sub>Trip Summary</sub> | `/trip_report` | <sub>optional, defaults to 0</sub> | <sub>ignored</sub> | <sub>optional, defaults to false</sub> | <sub>ignored</sub> | <sub>optional</sub> | <sub>optional</sub> | <sub>not supported</sub>  
+<sub>Trip Summary</sub> | `/trip_report` | <sub>optional, defaults to 0</sub> | <sub>ignored</sub> | <sub>optional, defaults to false</sub> | <sub>ignored</sub> | <sub>optional</sub> | <sub>not supported</sub>  
 <sub>Vehicle Health</sub> | `/vehicle_health` | <sub>= 0</sub> | <sub>ignored</sub> | <sub>optional, defaults to false</sub> | <sub>ignored</sub> | <sub>optional</sub> | <sub>optional</sub>  
 
 
 --
 <h3>Usage Example</h3>  
-In this example, we configure the transponder's serial number 159821's 'Overspeeding' threshold to 160kph (~99mph), with a 5 second allowance, and we'd like the generated report to include location, an odometer reading, and the vehicle's battery voltage.  Also, the buzzer should sound an alert at high volume to let the driver know they are going too fast.  
+In this example, we would like to configure transponder serial number 159821 to recognize an `'overspeeding'` event when the vehicle goes over 160kph (~99mph) for over 5 seconds, and we'd like the generated report to include location, an odometer reading, and the vehicle's battery voltage.  Also, the buzzer should sound an alert at high volume when this event is taking place to let the driver know they are going too fast.  
 
+*HTTP request*
 ```javascript
 PUT https://api.carmalink.com:8282/v1/159821/report_config/overspeeding  
 {  
