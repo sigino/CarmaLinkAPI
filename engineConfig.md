@@ -6,7 +6,7 @@ The transponder has the ability to provide fuel consumption information in vehic
 > All engine configuration request URIs are relative to /config/engine  
 
 <h3>Creating a new engine configuration</h3>  
-To create a new engine configuration for a given serial number, you must send a new PUT request containing the **Engine Configuration Update** object in JSON format, which will have the following fields:  
+To create a new engine configuration for a given serial number, you must send a new PUT request containing the **Engine Configuration Update object** in JSON format, which will have the following fields:  
 
 Field | JSON Name | Value type
 ------|-----------|-----------
