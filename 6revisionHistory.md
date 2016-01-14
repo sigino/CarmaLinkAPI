@@ -57,5 +57,5 @@
 * Parking reports are now generated on event start  
 * Add "Report generation" section to clarify how/when reports are created  
  
-
-[:fast_forward: Next Section: 7. Referenced documents & standards](/7referencedDocStand.md)
+--
+[:fast_forward: Next Section: **7. Referenced documents & standards**](/7referencedDocStand.md)
