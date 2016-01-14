@@ -69,4 +69,5 @@ Cellular signal strength | cellSignalStrength | Float | dBm | Received signal st
 
 Each type of report includes additional fields as standard, as will be described in the next section.  
 
-[:fast_forward: Next Section: Report types](/reportTypes.md)
+--
+[:fast_forward: Next Section: **Report types**](/reportTypes.md)
