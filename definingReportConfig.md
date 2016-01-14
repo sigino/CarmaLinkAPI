@@ -40,4 +40,5 @@ EMISSION_MONITORS
 IS_LOW_BATTERY_VOLTAGE  
 IS_LOW_TIRE_PRESSURE  
 
-[:fast_forward: Next Section: Creating a new report configuration](/creatingNewReportConfig.md)
+--
+[:fast_forward: Next Section: **Creating a new report configuration**](/creatingNewReportConfig.md)
