@@ -23,12 +23,12 @@ Welcome to the CarmaLink.API documentation.
 [3. Report generation](/3reportGeneration.md)  
 
 [4. Report data](/4reportData.md)    
-• [Report data structure](/reportDataStructure.md)  
+[Report data structure](/reportDataStructure.md)  
 [Report types](/reportTypes.md)  
 [Non-configurable reports](/nonConfigurable.md)  
 [Retrieving report data](/retrievingReportData.md)  
 
-[5. Authentication & permissions](/4authenticationPermissions.md)  
+[5. Authentication & permissions](/5authenticationPermissions.md)  
 
 [6. Revision History](/5revisionHistory.md)  
 Summary of changes since v1.1  
