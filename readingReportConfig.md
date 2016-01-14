@@ -11,7 +11,7 @@ Configuration ID | configId | Long
 Status | status | String; See Status section for allowed values  
 
 <h3>Configuration ID</h3>  
-For a given device, the server assigns a unique ID number, called the Configuration ID, to each new report configuration it receives through the API. The configuration ID provides a way to keep track of a set of value's that make up a report's configuration.  
+For a given device, the server assigns a unique ID number, called the Configuration ID, to each new report configuration it receives through the API. The configuration ID provides a way to keep track of the set of configuration values that cause a report of that type to be generated, and identifies the optional data to include in the report (if any).  
 
 Since most applications will benefit from having this ID number, it is recommended practice that once a PUT command is sent with a new report configuration, it should be followed with a matching GET command to retrieve the ID assigned to the configuration.  
 
