@@ -20,4 +20,5 @@ Vehicle Identification Number | `"vin"` | String; optional | 17-digit string ide
 
 The New Deployment report is the only report that can get updated: that is, you will typically receive the serial number, installation time and removal time shortly after you plug the transponder in. When you start the vehicle this report will then update to include the deployment time and VIN (if available).  
 
-[:fast_forward: Next Section: Retrieving report data](/retrievingReportData.md)
+--
+[:fast_forward: Next Section: **Retrieving report data**](/retrievingReportData.md)
