@@ -7,4 +7,5 @@ Deactivating a report will also automatically disable the buzzer for that report
 
 To re-enable a report, simply use the PUT method on the report's configuration URI with a Content-Type: application/json and an empty JSON object in the request body. If this report supports a buzzer configuration, it is recommended that you also include the previous valid buzzer volume.  
 
-[:fast_forward: Next Section: Changing an existing report configuration](/changingExistingConfig.md)
+--
+[:fast_forward: Next Section: **Changing an existing report configuration**](/changingExistingConfig.md)
