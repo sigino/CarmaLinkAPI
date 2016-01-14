@@ -1,4 +1,4 @@
-## 5. Revision History  
+## 6. Revision History  
 
 ### Summary of changes since v1.1  
 * Changed /device_status to /status in URLs.  
@@ -52,4 +52,4 @@
 * Changed engine configuration URI  
  
 
-[:fast_forward: Next Section: 6. Referenced documents & standards](/6referencedDocStand.md)
+[:fast_forward: Next Section: 7. Referenced documents & standards](/7referencedDocStand.md)
