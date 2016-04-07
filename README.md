@@ -1,7 +1,5 @@
 Welcome to the CarmaLink.API documentation. 
 
-Under Construction :construction:
-
 <h3>CarmaLink API version 1.9</h3>  
 <b>Table of Contents</b>  
   
